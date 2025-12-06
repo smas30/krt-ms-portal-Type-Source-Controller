@@ -1,0 +1,2973 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"f615693a-9ea9-474a-9c0d-2da37f3b2480",karate_version:"1.5.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>api.obtenerTypeSourcePorId</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-11-02 10:16:45 p. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:16]"><span>[1:16]</span> <span>Obtener un type source por ID</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">api/obtenerTypeSourcePorId.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Obtener type source por ID mediante GET /api/v1/portal/ref-type-sources/{id}</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:16]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">obtenerTypeSourcePorId</a><a class="badge badge-primary" href="karate-tags.html">obtenerTypeSourcesPorId</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:16]</span>
+                <span class="scenario-name">Obtener un type source por ID</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>4693</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:16]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure logPrettyResponse = false</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure logPrettyRequest = false</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def loginBody = read(&#39;classpath:JsonRequest/loginTokenRequest.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">84</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def loginResponse = call read(&#39;classpath:api/loginToken.feature&#39;) { request: loginBody }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2090</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.8.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">api.loginToken</div>
+      </div>
+      <div class="time-cell passed">2066</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url loginUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def schemaUtil = Java.type(&#39;util.JsonSchemaUtil&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def schemaText = karate.readAsString(&#39;classpath:Schema/sc_loginToken.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def validBodyRequest = read(&#39;classpath:JsonRequest/loginTokenRequest.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request validBodyRequest</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1382</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8.0.call.0.12">22:16:40.799 request:
+1 &gt; POST https://ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/intraLogin
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 39
+1 &gt; Host: ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;login&quot;:&quot;tns01&quot;,&quot;clave&quot;:&quot;T3st2024.+-&quot;}
+
+22:16:41.916 response time in milliseconds: 1103
+1 &lt; 200
+1 &lt; content-type: application/json
+1 &lt; content-length: 326
+1 &lt; set-cookie: c4e2248e6317d37faa062fd3ce9304d4=111be4bf5b2ba37de32b640f6ee05093; path=/; HttpOnly
+1 &lt; Set-Cookie: c4e2248e6317d37faa062fd3ce9304d4=111be4bf5b2ba37de32b640f6ee05093; path=/; HttpOnly
+{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjlGN0IwNUY1Nzk1Qzc5RjNDMDcwMjVDRDgzOTUxMkUxIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2MjAxLCJleHAiOjE3NjIxMzk4MDF9.5As-vF3T99ZGsmd_KCiDhVXTSTPNWl2maHlhgJEaudklPETjEXXGEA0MqdHD9HMi&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment"># Validar que la respuesta contenga el campo token</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.token == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">23</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment"># Validar la estructura completa de la respuesta usando el schema JSON</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def responseText = karate.pretty(response)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">43</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.18">
+      <div class="step-ref bg-step">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def isValid = schemaUtil.isValid(schemaText, responseText)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">602</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.19">
+      <div class="step-ref bg-step">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match isValid == true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = loginResponse.response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def headers = headersTypeSourceConToken(authToken)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure headers = headers</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def schemaUtil = Java.type(&#39;util.JsonSchemaUtil&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def schemaText = karate.readAsString(&#39;classpath:Schema/sc_typeSourceUnico.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">18</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Llamar al feature de obtener todos los type sources para obtener un ID</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def obtenerListaResponse = call read(&#39;classpath:api/obtenerTypeSources.feature@obtenerTodosLosTypeSources&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1890</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.18.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">api.obtenerTypeSources</div>
+      </div>
+      <div class="time-cell passed">1873</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.18.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment"># 1. LLAMANDO AL SERVICIO AUTHTOKEN PARA HACER LOGIN Y OBTENER EL TOKEN</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.18.0.call">
+    <div class="step-container" id="0.18.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure logPrettyResponse = false</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call">
+    <div class="step-container" id="0.18.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure logPrettyRequest = false</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call">
+    <div class="step-container" id="0.18.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def loginBody = read(&#39;classpath:JsonRequest/loginTokenRequest.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call">
+    <div class="step-container" id="0.18.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def loginResponse = call read(&#39;classpath:api/loginToken.feature&#39;) { request: loginBody }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">630</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row" data-parent="0.18.0.call">
+      <div class="step-container" id="0.18.0.call.0.9.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">api.loginToken</div>
+      </div>
+      <div class="time-cell passed">617</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call.0.9.0.call">
+    <div class="step-container" id="0.18.0.call.0.9.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url loginUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call.0.9.0.call">
+    <div class="step-container" id="0.18.0.call.0.9.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def schemaUtil = Java.type(&#39;util.JsonSchemaUtil&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call.0.9.0.call">
+    <div class="step-container" id="0.18.0.call.0.9.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def schemaText = karate.readAsString(&#39;classpath:Schema/sc_loginToken.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call.0.9.0.call">
+    <div class="step-container" id="0.18.0.call.0.9.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def validBodyRequest = read(&#39;classpath:JsonRequest/loginTokenRequest.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call.0.9.0.call">
+    <div class="step-container" id="0.18.0.call.0.9.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request validBodyRequest</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call.0.9.0.call">
+    <div class="step-container" id="0.18.0.call.0.9.0.call.0.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">605</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18.0.call.0.9.0.call.0.12">22:16:42.653 request:
+1 &gt; POST https://ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/intraLogin
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; X-CORRELATION-ID: 1445|E11011|234234
+1 &gt; X-TOKEN-ID: eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjlGN0IwNUY1Nzk1Qzc5RjNDMDcwMjVDRDgzOTUxMkUxIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2MjAxLCJleHAiOjE3NjIxMzk4MDF9.5As-vF3T99ZGsmd_KCiDhVXTSTPNWl2maHlhgJEaudklPETjEXXGEA0MqdHD9HMi
+1 &gt; Content-Length: 39
+1 &gt; Host: ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;login&quot;:&quot;tns01&quot;,&quot;clave&quot;:&quot;T3st2024.+-&quot;}
+
+22:16:43.255 response time in milliseconds: 602
+1 &lt; 200
+1 &lt; content-type: application/json
+1 &lt; content-length: 326
+1 &lt; set-cookie: c4e2248e6317d37faa062fd3ce9304d4=fd39bf078e5818d81837c480f471c390; path=/; HttpOnly
+1 &lt; Set-Cookie: c4e2248e6317d37faa062fd3ce9304d4=fd39bf078e5818d81837c480f471c390; path=/; HttpOnly
+{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjAxQjU1Njc5RTJFNzk4MTg2MzA3RTA1M0I5NDU4QzZEIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2MjAzLCJleHAiOjE3NjIxMzk4MDN9.BCzOcJBPw62h78mRVQ2YZ4FrlDE0-B90iLlaTyrrlUcWg3z4Ifz5KPlJbHM74yA6&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call.0.9.0.call">
+    <div class="step-container" id="0.18.0.call.0.9.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.18.0.call.0.9.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment"># Validar que la respuesta contenga el campo token</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.18.0.call.0.9.0.call">
+    <div class="step-container" id="0.18.0.call.0.9.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.token == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.18.0.call.0.9.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment"># Validar la estructura completa de la respuesta usando el schema JSON</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.18.0.call.0.9.0.call">
+    <div class="step-container" id="0.18.0.call.0.9.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def responseText = karate.pretty(response)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call.0.9.0.call">
+    <div class="step-container" id="0.18.0.call.0.9.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def isValid = schemaUtil.isValid(schemaText, responseText)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call.0.9.0.call">
+    <div class="step-container" id="0.18.0.call.0.9.0.call.0.19">
+      <div class="step-ref passed">19</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match isValid == true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call">
+    <div class="step-container" id="0.18.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = loginResponse.response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.18.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment"># 2. CONFIGURANDO HEADERS PARA TYPE SOURCES</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.18.0.call">
+    <div class="step-container" id="0.18.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def headers = headersTypeSourceConToken(authToken)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call">
+    <div class="step-container" id="0.18.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure headers = headers</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call">
+    <div class="step-container" id="0.18.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;HEADERS usados en obtener type sources:&#39;, headers</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18.0.call.0.15">22:16:43.273 [print] HEADERS usados en obtener type sources: {
+  &quot;Content-Type&quot;: &quot;application/json&quot;,
+  &quot;X-CORRELATION-ID&quot;: &quot;1445|E11011|234234&quot;,
+  &quot;X-TOKEN-ID&quot;: &quot;eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjAxQjU1Njc5RTJFNzk4MTg2MzA3RTA1M0I5NDU4QzZEIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2MjAzLCJleHAiOjE3NjIxMzk4MDN9.BCzOcJBPw62h78mRVQ2YZ4FrlDE0-B90iLlaTyrrlUcWg3z4Ifz5KPlJbHM74yA6&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call">
+    <div class="step-container" id="0.18.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;TOKEN obtenido:&#39;, authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18.0.call.0.16">22:16:43.275 [print] TOKEN obtenido: eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjAxQjU1Njc5RTJFNzk4MTg2MzA3RTA1M0I5NDU4QzZEIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2MjAzLCJleHAiOjE3NjIxMzk4MDN9.BCzOcJBPw62h78mRVQ2YZ4FrlDE0-B90iLlaTyrrlUcWg3z4Ifz5KPlJbHM74yA6 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.18.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment"># 3. CONFIGURANDO VALIDACION DE SCHEMA</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.18.0.call">
+    <div class="step-container" id="0.18.0.call.0.19">
+      <div class="step-ref passed">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def schemaUtil = Java.type(&#39;util.JsonSchemaUtil&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call">
+    <div class="step-container" id="0.18.0.call.0.20">
+      <div class="step-ref passed">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def schemaText = karate.readAsString(&#39;classpath:Schema/sc_obtenerTypeSources.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call">
+    <div class="step-container" id="0.18.0.call.0.24">
+      <div class="step-ref passed">24</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call">
+    <div class="step-container" id="0.18.0.call.0.25">
+      <div class="step-ref passed">25</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param limit = 1000</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call">
+    <div class="step-container" id="0.18.0.call.0.26">
+      <div class="step-ref passed">26</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param page = 1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call">
+    <div class="step-container" id="0.18.0.call.0.27">
+      <div class="step-ref passed">27</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1101</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18.0.call.0.27">22:16:43.283 request:
+1 &gt; GET https://portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/api/v1/portal/ref-type-sources?limit=1000&amp;page=1
+1 &gt; Content-Type: application/json
+1 &gt; X-CORRELATION-ID: 1445|E11011|234234
+1 &gt; X-TOKEN-ID: eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjAxQjU1Njc5RTJFNzk4MTg2MzA3RTA1M0I5NDU4QzZEIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2MjAzLCJleHAiOjE3NjIxMzk4MDN9.BCzOcJBPw62h78mRVQ2YZ4FrlDE0-B90iLlaTyrrlUcWg3z4Ifz5KPlJbHM74yA6
+1 &gt; Host: portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:16:44.375 response time in milliseconds: 1092
+1 &lt; 200
+1 &lt; transfer-encoding: chunked
+1 &lt; content-type: application/json;charset=UTF-8
+1 &lt; set-cookie: e04ac28d5e084ee6fdbd7bc1d4092a06=ea10ecf8d95bb6244abca4c8193e7f38; path=/; HttpOnly
+1 &lt; Set-Cookie: e04ac28d5e084ee6fdbd7bc1d4092a06=ea10ecf8d95bb6244abca4c8193e7f38; path=/; HttpOnly
+{&quot;success&quot;:true,&quot;data&quot;:{&quot;data&quot;:[{&quot;id&quot;:53,&quot;label&quot;:&quot;SART&quot;,&quot;name&quot;:&quot;SART&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:58,&quot;label&quot;:&quot;GESTOR_5620_SAM&quot;,&quot;name&quot;:&quot;Gestor 5620 SAM&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:65,&quot;label&quot;:&quot;MAVENIR&quot;,&quot;name&quot;:&quot;Mavenir&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:66,&quot;label&quot;:&quot;ACISION&quot;,&quot;name&quot;:&quot;Acision&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:64,&quot;label&quot;:&quot;SANDVINE&quot;,&quot;name&quot;:&quot;Sandvine&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:71,&quot;label&quot;:&quot;GESTOR_HUAWEI_U2020_CORE&quot;,&quot;name&quot;:&quot;Gestor Huawei U2020 Core&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:72,&quot;label&quot;:&quot;NECTACT&quot;,&quot;name&quot;:&quot;NectAct&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:75,&quot;label&quot;:&quot;CORE_HUAWEI_U2020&quot;,&quot;name&quot;:&quot;Core Huawei u2020&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:61,&quot;label&quot;:&quot;GESTOR_ASA&quot;,&quot;name&quot;:&quot;GESTOR ASA&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:74,&quot;label&quot;:&quot;NE8000-M14&quot;,&quot;name&quot;:&quot;NE8000-M14 &quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:56,&quot;label&quot;:&quot;OSS_NSN&quot;,&quot;name&quot;:&quot;OSS NSN&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:57,&quot;label&quot;:&quot;CGNAT&quot;,&quot;name&quot;:&quot;CGNAT&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:63,&quot;label&quot;:&quot;DELL&quot;,&quot;name&quot;:&quot;DELL&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:69,&quot;label&quot;:&quot;INFOBLOX_DNS&quot;,&quot;name&quot;:&quot;INFOBLOX DNS&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:1,&quot;label&quot;:&quot;ECP&quot;,&quot;name&quot;:&quot;ECP&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:2,&quot;label&quot;:&quot;SWITCHMATE&quot;,&quot;name&quot;:&quot;SwitchMATE&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:3,&quot;label&quot;:&quot;OMC&quot;,&quot;name&quot;:&quot;OMC&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:4,&quot;label&quot;:&quot;STP-ITU&quot;,&quot;name&quot;:&quot;STP-ITU&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:5,&quot;label&quot;:&quot;ANS&quot;,&quot;name&quot;:&quot;ANS&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:6,&quot;label&quot;:&quot;AXE&quot;,&quot;name&quot;:&quot;AXE&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:7,&quot;label&quot;:&quot;NCC&quot;,&quot;name&quot;:&quot;NCC&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:8,&quot;label&quot;:&quot;OPEN_VIEW&quot;,&quot;name&quot;:&quot;Open View&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:9,&quot;label&quot;:&quot;5ESS&quot;,&quot;name&quot;:&quot;5ESS&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:10,&quot;label&quot;:&quot;STP-ANSI&quot;,&quot;name&quot;:&quot;STP-ANSI&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:11,&quot;label&quot;:&quot;HLR&quot;,&quot;name&quot;:&quot;HLR&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:12,&quot;label&quot;:&quot;IS-41&quot;,&quot;name&quot;:&quot;IS-41&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:13,&quot;label&quot;:&quot;SMS&quot;,&quot;name&quot;:&quot;SMS&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:14,&quot;label&quot;:&quot;T-LINK_EXTENDERS&quot;,&quot;name&quot;:&quot;T-Link Extenders&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:15,&quot;label&quot;:&quot;MANAGER_TT&quot;,&quot;name&quot;:&quot;Manager TT&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:16,&quot;label&quot;:&quot;GESTOR_ENM&quot;,&quot;name&quot;:&quot;Gestor ENM&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:17,&quot;label&quot;:&quot;GESTOR_ALCATEL&quot;,&quot;name&quot;:&quot;Gestor Alcatel&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:18,&quot;label&quot;:&quot;HIQ&quot;,&quot;name&quot;:&quot;HiQ&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:19,&quot;label&quot;:&quot;STP_TEKELEC_ANSI&quot;,&quot;name&quot;:&quot;STP Tekelec ANSI&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:20,&quot;label&quot;:&quot;GESTOR_5620&quot;,&quot;name&quot;:&quot;Gestor 5620&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:21,&quot;label&quot;:&quot;FTP_SERVER&quot;,&quot;name&quot;:&quot;FTP Server&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:22,&quot;label&quot;:&quot;ODBC&quot;,&quot;name&quot;:&quot;ODBC&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:23,&quot;label&quot;:&quot;MAR&quot;,&quot;name&quot;:&quot;MAR&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:24,&quot;label&quot;:&quot;GESTOR_HARRIS&quot;,&quot;name&quot;:&quot;Gestor Harris&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:25,&quot;label&quot;:&quot;AAA_3G&quot;,&quot;name&quot;:&quot;AAA 3G&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:26,&quot;label&quot;:&quot;GESTOR_NEW_NMS&quot;,&quot;name&quot;:&quot;Gestor New Nms&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:28,&quot;label&quot;:&quot;GESTOR_NETX&quot;,&quot;name&quot;:&quot;Gestor Netx&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:29,&quot;label&quot;:&quot;SISTEMA_OPERATIVO_WINDOWS&quot;,&quot;name&quot;:&quot;Sistema Operativo Windows&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:30,&quot;label&quot;:&quot;ANYPATH&quot;,&quot;name&quot;:&quot;Anypath&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:31,&quot;label&quot;:&quot;CENTIGRAM&quot;,&quot;name&quot;:&quot;Centigram&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:32,&quot;label&quot;:&quot;GSM_OSS&quot;,&quot;name&quot;:&quot;GSM OSS&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:33,&quot;label&quot;:&quot;EQUIPAMIENTO_DE_ESTACION&quot;,&quot;name&quot;:&quot;Equipamiento de Estacion&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:34,&quot;label&quot;:&quot;DYNAMIC_ROUTING&quot;,&quot;name&quot;:&quot;Dynamic Routing&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:35,&quot;label&quot;:&quot;GESTOR_HUAWEI_T2000&quot;,&quot;name&quot;:&quot;Gestor Huawei T2000&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:36,&quot;label&quot;:&quot;CMS&quot;,&quot;name&quot;:&quot;CMS&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:37,&quot;label&quot;:&quot;OMP&quot;,&quot;name&quot;:&quot;OMP&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:38,&quot;label&quot;:&quot;PLEXUS&quot;,&quot;name&quot;:&quot;Plexus&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:40,&quot;label&quot;:&quot;GESTOR_ERICSSON&quot;,&quot;name&quot;:&quot;Gestor Ericsson&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:41,&quot;label&quot;:&quot;GESTOR_NERA&quot;,&quot;name&quot;:&quot;Gestor Nera&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:42,&quot;label&quot;:&quot;GESTOR_ALU&quot;,&quot;name&quot;:&quot;Gestor ALU&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:43,&quot;label&quot;:&quot;GESTOR_ECI&quot;,&quot;name&quot;:&quot;Gestor ECI&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:44,&quot;label&quot;:&quot;GESTOR_ONMS&quot;,&quot;name&quot;:&quot;Gestor ONMS&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:45,&quot;label&quot;:&quot;GESTOR&quot;,&quot;name&quot;:&quot;Gestor&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:46,&quot;label&quot;:&quot;MISMO_EQUIPO&quot;,&quot;name&quot;:&quot;Mismo Equipo&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:47,&quot;label&quot;:&quot;NO_APLICA&quot;,&quot;name&quot;:&quot;NO APLICA&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:48,&quot;label&quot;:&quot;OTRO_CARRIER&quot;,&quot;name&quot;:&quot;OTRO CARRIER&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:49,&quot;label&quot;:&quot;PLATAFORMA_DE_MUX&quot;,&quot;name&quot;:&quot;PLATAFORMA DE MUX&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:50,&quot;label&quot;:&quot;CONEXION_FISICA&quot;,&quot;name&quot;:&quot;CONEXION FISICA&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:51,&quot;label&quot;:&quot;M2000&quot;,&quot;name&quot;:&quot;M2000&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:39,&quot;label&quot;:&quot;CORE_IP&quot;,&quot;name&quot;:&quot;CORE IP&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:52,&quot;label&quot;:&quot;THOMPSON_XMS&quot;,&quot;name&quot;:&quot;THOMPSON XMS&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:55,&quot;label&quot;:&quot;ZTE&quot;,&quot;name&quot;:&quot;ZTE&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:59,&quot;label&quot;:&quot;HUAWEI_NGIN&quot;,&quot;name&quot;:&quot;Huawei NGIN&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:60,&quot;label&quot;:&quot;ASCADE&quot;,&quot;name&quot;:&quot;ASCADE&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:70,&quot;label&quot;:&quot;CHECKPOINT&quot;,&quot;name&quot;:&quot;Checkpoint&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:62,&quot;label&quot;:&quot;CISCO&quot;,&quot;name&quot;:&quot;CISCO&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:73,&quot;label&quot;:&quot;GESTOR_SIAE&quot;,&quot;name&quot;:&quot;Gestor SIAE&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:54,&quot;label&quot;:&quot;GESTOR_HUAWEI_U2000&quot;,&quot;name&quot;:&quot;Gestor Huawei U2000&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:67,&quot;label&quot;:&quot;JUNIPER&quot;,&quot;name&quot;:&quot;Juniper&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:68,&quot;label&quot;:&quot;GESTOR_U2000_HUAWEI_LTE&quot;,&quot;name&quot;:&quot;Gestor U2000 Huawei LTE&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;}],&quot;total&quot;:74,&quot;page&quot;:1,&quot;limit&quot;:1000,&quot;hasNext&quot;:false,&quot;hasPrev&quot;:false,&quot;next&quot;:1,&quot;prev&quot;:1,&quot;pages&quot;:1,&quot;last&quot;:1,&quot;first&quot;:1},&quot;timestamp&quot;:1762136204162}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call">
+    <div class="step-container" id="0.18.0.call.0.28">
+      <div class="step-ref passed">28</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call">
+    <div class="step-container" id="0.18.0.call.0.29">
+      <div class="step-ref passed">29</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.success == true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call">
+    <div class="step-container" id="0.18.0.call.0.30">
+      <div class="step-ref passed">30</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data.data == &#39;#array&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call">
+    <div class="step-container" id="0.18.0.call.0.31">
+      <div class="step-ref passed">31</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def responseText = karate.pretty(response)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">24</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call">
+    <div class="step-container" id="0.18.0.call.0.32">
+      <div class="step-ref passed">32</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def isValid = schemaUtil.isValid(schemaText, responseText)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">65</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call">
+    <div class="step-container" id="0.18.0.call.0.33">
+      <div class="step-ref passed">33</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match isValid == true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call">
+    <div class="step-container" id="0.18.0.call.0.34">
+      <div class="step-ref passed">34</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Total de type sources encontrados:&#39;, response.data.data.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18.0.call.0.34">22:16:44.475 [print] Total de type sources encontrados: 74 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call">
+    <div class="step-container" id="0.18.0.call.0.35">
+      <div class="step-ref passed">35</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18.0.call.0.35">22:16:44.482 [print] {
+  &quot;success&quot;: true,
+  &quot;data&quot;: {
+    &quot;data&quot;: [
+      {
+        &quot;id&quot;: 53,
+        &quot;label&quot;: &quot;SART&quot;,
+        &quot;name&quot;: &quot;SART&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 58,
+        &quot;label&quot;: &quot;GESTOR_5620_SAM&quot;,
+        &quot;name&quot;: &quot;Gestor 5620 SAM&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 65,
+        &quot;label&quot;: &quot;MAVENIR&quot;,
+        &quot;name&quot;: &quot;Mavenir&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 66,
+        &quot;label&quot;: &quot;ACISION&quot;,
+        &quot;name&quot;: &quot;Acision&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 64,
+        &quot;label&quot;: &quot;SANDVINE&quot;,
+        &quot;name&quot;: &quot;Sandvine&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 71,
+        &quot;label&quot;: &quot;GESTOR_HUAWEI_U2020_CORE&quot;,
+        &quot;name&quot;: &quot;Gestor Huawei U2020 Core&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 72,
+        &quot;label&quot;: &quot;NECTACT&quot;,
+        &quot;name&quot;: &quot;NectAct&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 75,
+        &quot;label&quot;: &quot;CORE_HUAWEI_U2020&quot;,
+        &quot;name&quot;: &quot;Core Huawei u2020&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 61,
+        &quot;label&quot;: &quot;GESTOR_ASA&quot;,
+        &quot;name&quot;: &quot;GESTOR ASA&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 74,
+        &quot;label&quot;: &quot;NE8000-M14&quot;,
+        &quot;name&quot;: &quot;NE8000-M14 &quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 56,
+        &quot;label&quot;: &quot;OSS_NSN&quot;,
+        &quot;name&quot;: &quot;OSS NSN&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 57,
+        &quot;label&quot;: &quot;CGNAT&quot;,
+        &quot;name&quot;: &quot;CGNAT&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 63,
+        &quot;label&quot;: &quot;DELL&quot;,
+        &quot;name&quot;: &quot;DELL&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 69,
+        &quot;label&quot;: &quot;INFOBLOX_DNS&quot;,
+        &quot;name&quot;: &quot;INFOBLOX DNS&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 1,
+        &quot;label&quot;: &quot;ECP&quot;,
+        &quot;name&quot;: &quot;ECP&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 2,
+        &quot;label&quot;: &quot;SWITCHMATE&quot;,
+        &quot;name&quot;: &quot;SwitchMATE&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 3,
+        &quot;label&quot;: &quot;OMC&quot;,
+        &quot;name&quot;: &quot;OMC&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 4,
+        &quot;label&quot;: &quot;STP-ITU&quot;,
+        &quot;name&quot;: &quot;STP-ITU&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 5,
+        &quot;label&quot;: &quot;ANS&quot;,
+        &quot;name&quot;: &quot;ANS&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 6,
+        &quot;label&quot;: &quot;AXE&quot;,
+        &quot;name&quot;: &quot;AXE&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 7,
+        &quot;label&quot;: &quot;NCC&quot;,
+        &quot;name&quot;: &quot;NCC&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 8,
+        &quot;label&quot;: &quot;OPEN_VIEW&quot;,
+        &quot;name&quot;: &quot;Open View&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 9,
+        &quot;label&quot;: &quot;5ESS&quot;,
+        &quot;name&quot;: &quot;5ESS&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 10,
+        &quot;label&quot;: &quot;STP-ANSI&quot;,
+        &quot;name&quot;: &quot;STP-ANSI&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 11,
+        &quot;label&quot;: &quot;HLR&quot;,
+        &quot;name&quot;: &quot;HLR&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 12,
+        &quot;label&quot;: &quot;IS-41&quot;,
+        &quot;name&quot;: &quot;IS-41&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 13,
+        &quot;label&quot;: &quot;SMS&quot;,
+        &quot;name&quot;: &quot;SMS&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 14,
+        &quot;label&quot;: &quot;T-LINK_EXTENDERS&quot;,
+        &quot;name&quot;: &quot;T-Link Extenders&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 15,
+        &quot;label&quot;: &quot;MANAGER_TT&quot;,
+        &quot;name&quot;: &quot;Manager TT&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 16,
+        &quot;label&quot;: &quot;GESTOR_ENM&quot;,
+        &quot;name&quot;: &quot;Gestor ENM&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 17,
+        &quot;label&quot;: &quot;GESTOR_ALCATEL&quot;,
+        &quot;name&quot;: &quot;Gestor Alcatel&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 18,
+        &quot;label&quot;: &quot;HIQ&quot;,
+        &quot;name&quot;: &quot;HiQ&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 19,
+        &quot;label&quot;: &quot;STP_TEKELEC_ANSI&quot;,
+        &quot;name&quot;: &quot;STP Tekelec ANSI&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 20,
+        &quot;label&quot;: &quot;GESTOR_5620&quot;,
+        &quot;name&quot;: &quot;Gestor 5620&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 21,
+        &quot;label&quot;: &quot;FTP_SERVER&quot;,
+        &quot;name&quot;: &quot;FTP Server&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 22,
+        &quot;label&quot;: &quot;ODBC&quot;,
+        &quot;name&quot;: &quot;ODBC&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 23,
+        &quot;label&quot;: &quot;MAR&quot;,
+        &quot;name&quot;: &quot;MAR&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 24,
+        &quot;label&quot;: &quot;GESTOR_HARRIS&quot;,
+        &quot;name&quot;: &quot;Gestor Harris&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 25,
+        &quot;label&quot;: &quot;AAA_3G&quot;,
+        &quot;name&quot;: &quot;AAA 3G&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 26,
+        &quot;label&quot;: &quot;GESTOR_NEW_NMS&quot;,
+        &quot;name&quot;: &quot;Gestor New Nms&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 28,
+        &quot;label&quot;: &quot;GESTOR_NETX&quot;,
+        &quot;name&quot;: &quot;Gestor Netx&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 29,
+        &quot;label&quot;: &quot;SISTEMA_OPERATIVO_WINDOWS&quot;,
+        &quot;name&quot;: &quot;Sistema Operativo Windows&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 30,
+        &quot;label&quot;: &quot;ANYPATH&quot;,
+        &quot;name&quot;: &quot;Anypath&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 31,
+        &quot;label&quot;: &quot;CENTIGRAM&quot;,
+        &quot;name&quot;: &quot;Centigram&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 32,
+        &quot;label&quot;: &quot;GSM_OSS&quot;,
+        &quot;name&quot;: &quot;GSM OSS&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 33,
+        &quot;label&quot;: &quot;EQUIPAMIENTO_DE_ESTACION&quot;,
+        &quot;name&quot;: &quot;Equipamiento de Estacion&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 34,
+        &quot;label&quot;: &quot;DYNAMIC_ROUTING&quot;,
+        &quot;name&quot;: &quot;Dynamic Routing&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 35,
+        &quot;label&quot;: &quot;GESTOR_HUAWEI_T2000&quot;,
+        &quot;name&quot;: &quot;Gestor Huawei T2000&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 36,
+        &quot;label&quot;: &quot;CMS&quot;,
+        &quot;name&quot;: &quot;CMS&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 37,
+        &quot;label&quot;: &quot;OMP&quot;,
+        &quot;name&quot;: &quot;OMP&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 38,
+        &quot;label&quot;: &quot;PLEXUS&quot;,
+        &quot;name&quot;: &quot;Plexus&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 40,
+        &quot;label&quot;: &quot;GESTOR_ERICSSON&quot;,
+        &quot;name&quot;: &quot;Gestor Ericsson&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 41,
+        &quot;label&quot;: &quot;GESTOR_NERA&quot;,
+        &quot;name&quot;: &quot;Gestor Nera&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 42,
+        &quot;label&quot;: &quot;GESTOR_ALU&quot;,
+        &quot;name&quot;: &quot;Gestor ALU&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 43,
+        &quot;label&quot;: &quot;GESTOR_ECI&quot;,
+        &quot;name&quot;: &quot;Gestor ECI&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 44,
+        &quot;label&quot;: &quot;GESTOR_ONMS&quot;,
+        &quot;name&quot;: &quot;Gestor ONMS&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 45,
+        &quot;label&quot;: &quot;GESTOR&quot;,
+        &quot;name&quot;: &quot;Gestor&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 46,
+        &quot;label&quot;: &quot;MISMO_EQUIPO&quot;,
+        &quot;name&quot;: &quot;Mismo Equipo&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 47,
+        &quot;label&quot;: &quot;NO_APLICA&quot;,
+        &quot;name&quot;: &quot;NO APLICA&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 48,
+        &quot;label&quot;: &quot;OTRO_CARRIER&quot;,
+        &quot;name&quot;: &quot;OTRO CARRIER&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 49,
+        &quot;label&quot;: &quot;PLATAFORMA_DE_MUX&quot;,
+        &quot;name&quot;: &quot;PLATAFORMA DE MUX&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 50,
+        &quot;label&quot;: &quot;CONEXION_FISICA&quot;,
+        &quot;name&quot;: &quot;CONEXION FISICA&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 51,
+        &quot;label&quot;: &quot;M2000&quot;,
+        &quot;name&quot;: &quot;M2000&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 39,
+        &quot;label&quot;: &quot;CORE_IP&quot;,
+        &quot;name&quot;: &quot;CORE IP&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 52,
+        &quot;label&quot;: &quot;THOMPSON_XMS&quot;,
+        &quot;name&quot;: &quot;THOMPSON XMS&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 55,
+        &quot;label&quot;: &quot;ZTE&quot;,
+        &quot;name&quot;: &quot;ZTE&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 59,
+        &quot;label&quot;: &quot;HUAWEI_NGIN&quot;,
+        &quot;name&quot;: &quot;Huawei NGIN&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 60,
+        &quot;label&quot;: &quot;ASCADE&quot;,
+        &quot;name&quot;: &quot;ASCADE&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 70,
+        &quot;label&quot;: &quot;CHECKPOINT&quot;,
+        &quot;name&quot;: &quot;Checkpoint&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 62,
+        &quot;label&quot;: &quot;CISCO&quot;,
+        &quot;name&quot;: &quot;CISCO&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 73,
+        &quot;label&quot;: &quot;GESTOR_SIAE&quot;,
+        &quot;name&quot;: &quot;Gestor SIAE&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 54,
+        &quot;label&quot;: &quot;GESTOR_HUAWEI_U2000&quot;,
+        &quot;name&quot;: &quot;Gestor Huawei U2000&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 67,
+        &quot;label&quot;: &quot;JUNIPER&quot;,
+        &quot;name&quot;: &quot;Juniper&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 68,
+        &quot;label&quot;: &quot;GESTOR_U2000_HUAWEI_LTE&quot;,
+        &quot;name&quot;: &quot;Gestor U2000 Huawei LTE&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      }
+    ],
+    &quot;total&quot;: 74,
+    &quot;page&quot;: 1,
+    &quot;limit&quot;: 1000,
+    &quot;hasNext&quot;: false,
+    &quot;hasPrev&quot;: false,
+    &quot;next&quot;: 1,
+    &quot;prev&quot;: 1,
+    &quot;pages&quot;: 1,
+    &quot;last&quot;: 1,
+    &quot;first&quot;: 1
+  },
+  &quot;timestamp&quot;: 1762136204162
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.18.0.call">
+    <div class="step-container" id="0.18.0.call.0.36">
+      <div class="step-ref passed">36</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;=== TIEMPO DE RESPUESTA DEL FEATURE ===&#39;, responseTime / 1000, &#39;s&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">25</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18.0.call.0.36">22:16:44.507 [print] === TIEMPO DE RESPUESTA DEL FEATURE === 1.092 s 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def typeSourceId = obtenerListaResponse.response.data.data[0].id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;ID obtenido del feature obtenerTypeSources:&#39;, typeSourceId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">22:16:44.513 [print] ID obtenido del feature obtenerTypeSources: 53 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Obtener ese type source por ID</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl + &#39;/&#39; + typeSourceId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">17</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">565</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.24">22:16:44.532 request:
+1 &gt; GET https://portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/api/v1/portal/ref-type-sources/53
+1 &gt; Content-Type: application/json
+1 &gt; X-CORRELATION-ID: 1445|E11011|234234
+1 &gt; X-TOKEN-ID: eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjlGN0IwNUY1Nzk1Qzc5RjNDMDcwMjVDRDgzOTUxMkUxIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2MjAxLCJleHAiOjE3NjIxMzk4MDF9.5As-vF3T99ZGsmd_KCiDhVXTSTPNWl2maHlhgJEaudklPETjEXXGEA0MqdHD9HMi
+1 &gt; Host: portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:16:45.094 response time in milliseconds: 559
+1 &lt; 200
+1 &lt; content-length: 205
+1 &lt; content-type: application/json;charset=UTF-8
+1 &lt; set-cookie: e04ac28d5e084ee6fdbd7bc1d4092a06=ea10ecf8d95bb6244abca4c8193e7f38; path=/; HttpOnly
+1 &lt; Set-Cookie: e04ac28d5e084ee6fdbd7bc1d4092a06=ea10ecf8d95bb6244abca4c8193e7f38; path=/; HttpOnly
+{&quot;success&quot;:true,&quot;data&quot;:{&quot;id&quot;:53,&quot;label&quot;:&quot;SART&quot;,&quot;name&quot;:&quot;SART&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},&quot;timestamp&quot;:1762136205054}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.success == true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data.id == typeSourceId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def responseText = karate.pretty(response)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def isValid = schemaUtil.isValid(schemaText, responseText)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match isValid == true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Type Source obtenido exitosamente:&#39;, response.data</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.31">22:16:45.108 [print] Type Source obtenido exitosamente: {
+  &quot;id&quot;: 53,
+  &quot;label&quot;: &quot;SART&quot;,
+  &quot;name&quot;: &quot;SART&quot;,
+  &quot;status&quot;: 1,
+  &quot;createdBy&quot;: &quot;ROOT&quot;,
+  &quot;updatedBy&quot;: &quot;ROOT&quot;,
+  &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+  &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;=== TIEMPO DE RESPUESTA ===&#39;, responseTime / 1000, &#39;s&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.32">22:16:45.111 [print] === TIEMPO DE RESPUESTA === 0.559 s 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

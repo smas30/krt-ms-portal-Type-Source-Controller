@@ -1,0 +1,2186 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1.0) - Feature: api/obtenerTypeSources.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>krt-ms-portal-Type-Source-Controller</td>
+        <td>1.0</td>
+      <td>02 nov. 2025, 22:16</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">api/obtenerTypeSources.feature</td>
+          <td      class="passed"    >36</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">36</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="13103403800">13.103</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1524718406.html">@obtenerTypeSources</a>
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">api/obtenerTypeSources.feature</span>
+
+
+</div>
+
+        <div class="description indention">Obtener type sources mediante el endpoint GET /api/v1/portal/ref-type-sources</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">11.129</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention"># 1. LLAMANDO AL SERVICIO AUTHTOKEN PARA HACER LOGIN Y OBTENER EL TOKEN</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure logPrettyResponse = false</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure logPrettyRequest = false</span>
+
+  <span class="lead-duration duration">0.022</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def loginBody = read('classpath:JsonRequest/loginTokenRequest.json')</span>
+
+  <span class="lead-duration duration">0.181</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def loginResponse = call read('classpath:api/loginToken.feature') { request: loginBody }</span>
+
+  <span class="lead-duration duration">5.452</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">api/loginToken.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url loginUrl</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def schemaUtil = Java.type('util.JsonSchemaUtil')</span>
+
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def schemaText = karate.readAsString('classpath:Schema/sc_loginToken.json')</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def validBodyRequest = read('classpath:JsonRequest/loginTokenRequest.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">request validBodyRequest</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">1.801</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>22:11:10.815 request:
+1 &gt; POST https://ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/intraLogin
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 39
+1 &gt; Host: ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;login&quot;:&quot;tns01&quot;,&quot;clave&quot;:&quot;T3st2024.+-&quot;}
+
+22:11:11.943 response time in milliseconds: 1118
+1 &lt; 200
+1 &lt; content-type: application/json
+1 &lt; content-length: 326
+1 &lt; set-cookie: c4e2248e6317d37faa062fd3ce9304d4=fd39bf078e5818d81837c480f471c390; path=/; HttpOnly
+1 &lt; Set-Cookie: c4e2248e6317d37faa062fd3ce9304d4=fd39bf078e5818d81837c480f471c390; path=/; HttpOnly
+{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjY2QkM1OTNFOEUxODcyNDhGMDFFMjkzREE3RDM4RDdFIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM1ODcxLCJleHAiOjE3NjIxMzk0NzF9.Pdu0bx-F49rwoiysqONNMJFQ4dv03pF6xPCGgpBV5iQ29g9hWN-VTbIu_zXMfIFL&quot;}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Validar que la respuesta contenga el campo token</div>
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.token == '#string'</span>
+
+  <span class="lead-duration duration">0.066</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Validar la estructura completa de la respuesta usando el schema JSON</div>
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def responseText = karate.pretty(response)</span>
+
+  <span class="lead-duration duration">0.164</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def isValid = schemaUtil.isValid(schemaText, responseText)</span>
+
+  <span class="lead-duration duration">3.231</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">match isValid == true</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def authToken = loginResponse.response.token</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># 2. CONFIGURANDO HEADERS PARA TYPE SOURCES</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def headers = headersTypeSourceConToken(authToken)</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure headers = headers</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'HEADERS usados en obtener type sources:', headers</span>
+
+  <span class="lead-duration duration">0.026</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>22:11:15.456 [print] HEADERS usados en obtener type sources: {
+  &quot;Content-Type&quot;: &quot;application/json&quot;,
+  &quot;X-CORRELATION-ID&quot;: &quot;1445|E11011|234234&quot;,
+  &quot;X-TOKEN-ID&quot;: &quot;eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjY2QkM1OTNFOEUxODcyNDhGMDFFMjkzREE3RDM4RDdFIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM1ODcxLCJleHAiOjE3NjIxMzk0NzF9.Pdu0bx-F49rwoiysqONNMJFQ4dv03pF6xPCGgpBV5iQ29g9hWN-VTbIu_zXMfIFL&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'TOKEN obtenido:', authToken</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>22:11:15.459 [print] TOKEN obtenido: eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjY2QkM1OTNFOEUxODcyNDhGMDFFMjkzREE3RDM4RDdFIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM1ODcxLCJleHAiOjE3NjIxMzk0NzF9.Pdu0bx-F49rwoiysqONNMJFQ4dv03pF6xPCGgpBV5iQ29g9hWN-VTbIu_zXMfIFL 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># 3. CONFIGURANDO VALIDACION DE SCHEMA</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def schemaUtil = Java.type('util.JsonSchemaUtil')</span>
+
+  <span class="lead-duration duration">0.036</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def schemaText = karate.readAsString('classpath:Schema/sc_obtenerTypeSources.json')</span>
+
+  <span class="lead-duration duration">0.110</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_120176419.html">@obtenerTodosLosTypeSources</a>
+       <a href="report-tag_1524718406.html">@obtenerTypeSources</a>
+</div>
+
+
+  <span class="lead-duration duration">1.974</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-6">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Obtener todos los type sources sin filtros</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-6" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-7" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param limit = 1000</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param page = 1</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+
+  <span class="lead-duration duration">1.707</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>22:11:15.619 request:
+1 &gt; GET https://portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/api/v1/portal/ref-type-sources?limit=1000&amp;page=1
+1 &gt; Content-Type: application/json
+1 &gt; X-CORRELATION-ID: 1445|E11011|234234
+1 &gt; X-TOKEN-ID: eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjY2QkM1OTNFOEUxODcyNDhGMDFFMjkzREE3RDM4RDdFIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM1ODcxLCJleHAiOjE3NjIxMzk0NzF9.Pdu0bx-F49rwoiysqONNMJFQ4dv03pF6xPCGgpBV5iQ29g9hWN-VTbIu_zXMfIFL
+1 &gt; Host: portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:11:17.298 response time in milliseconds: 1676
+1 &lt; 200
+1 &lt; transfer-encoding: chunked
+1 &lt; content-type: application/json;charset=UTF-8
+1 &lt; set-cookie: e04ac28d5e084ee6fdbd7bc1d4092a06=e6679c634420882e35307b805c67c783; path=/; HttpOnly
+1 &lt; Set-Cookie: e04ac28d5e084ee6fdbd7bc1d4092a06=e6679c634420882e35307b805c67c783; path=/; HttpOnly
+{&quot;success&quot;:true,&quot;data&quot;:{&quot;data&quot;:[{&quot;id&quot;:53,&quot;label&quot;:&quot;SART&quot;,&quot;name&quot;:&quot;SART&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:58,&quot;label&quot;:&quot;GESTOR_5620_SAM&quot;,&quot;name&quot;:&quot;Gestor 5620 SAM&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:65,&quot;label&quot;:&quot;MAVENIR&quot;,&quot;name&quot;:&quot;Mavenir&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:66,&quot;label&quot;:&quot;ACISION&quot;,&quot;name&quot;:&quot;Acision&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:64,&quot;label&quot;:&quot;SANDVINE&quot;,&quot;name&quot;:&quot;Sandvine&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:71,&quot;label&quot;:&quot;GESTOR_HUAWEI_U2020_CORE&quot;,&quot;name&quot;:&quot;Gestor Huawei U2020 Core&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:72,&quot;label&quot;:&quot;NECTACT&quot;,&quot;name&quot;:&quot;NectAct&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:75,&quot;label&quot;:&quot;CORE_HUAWEI_U2020&quot;,&quot;name&quot;:&quot;Core Huawei u2020&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:61,&quot;label&quot;:&quot;GESTOR_ASA&quot;,&quot;name&quot;:&quot;GESTOR ASA&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:74,&quot;label&quot;:&quot;NE8000-M14&quot;,&quot;name&quot;:&quot;NE8000-M14 &quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:56,&quot;label&quot;:&quot;OSS_NSN&quot;,&quot;name&quot;:&quot;OSS NSN&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:57,&quot;label&quot;:&quot;CGNAT&quot;,&quot;name&quot;:&quot;CGNAT&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:63,&quot;label&quot;:&quot;DELL&quot;,&quot;name&quot;:&quot;DELL&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:69,&quot;label&quot;:&quot;INFOBLOX_DNS&quot;,&quot;name&quot;:&quot;INFOBLOX DNS&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:1,&quot;label&quot;:&quot;ECP&quot;,&quot;name&quot;:&quot;ECP&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:2,&quot;label&quot;:&quot;SWITCHMATE&quot;,&quot;name&quot;:&quot;SwitchMATE&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:3,&quot;label&quot;:&quot;OMC&quot;,&quot;name&quot;:&quot;OMC&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:4,&quot;label&quot;:&quot;STP-ITU&quot;,&quot;name&quot;:&quot;STP-ITU&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:5,&quot;label&quot;:&quot;ANS&quot;,&quot;name&quot;:&quot;ANS&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:6,&quot;label&quot;:&quot;AXE&quot;,&quot;name&quot;:&quot;AXE&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:7,&quot;label&quot;:&quot;NCC&quot;,&quot;name&quot;:&quot;NCC&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:8,&quot;label&quot;:&quot;OPEN_VIEW&quot;,&quot;name&quot;:&quot;Open View&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:9,&quot;label&quot;:&quot;5ESS&quot;,&quot;name&quot;:&quot;5ESS&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:10,&quot;label&quot;:&quot;STP-ANSI&quot;,&quot;name&quot;:&quot;STP-ANSI&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:11,&quot;label&quot;:&quot;HLR&quot;,&quot;name&quot;:&quot;HLR&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:12,&quot;label&quot;:&quot;IS-41&quot;,&quot;name&quot;:&quot;IS-41&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:13,&quot;label&quot;:&quot;SMS&quot;,&quot;name&quot;:&quot;SMS&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:14,&quot;label&quot;:&quot;T-LINK_EXTENDERS&quot;,&quot;name&quot;:&quot;T-Link Extenders&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:15,&quot;label&quot;:&quot;MANAGER_TT&quot;,&quot;name&quot;:&quot;Manager TT&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:16,&quot;label&quot;:&quot;GESTOR_ENM&quot;,&quot;name&quot;:&quot;Gestor ENM&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:17,&quot;label&quot;:&quot;GESTOR_ALCATEL&quot;,&quot;name&quot;:&quot;Gestor Alcatel&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:18,&quot;label&quot;:&quot;HIQ&quot;,&quot;name&quot;:&quot;HiQ&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:19,&quot;label&quot;:&quot;STP_TEKELEC_ANSI&quot;,&quot;name&quot;:&quot;STP Tekelec ANSI&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:20,&quot;label&quot;:&quot;GESTOR_5620&quot;,&quot;name&quot;:&quot;Gestor 5620&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:21,&quot;label&quot;:&quot;FTP_SERVER&quot;,&quot;name&quot;:&quot;FTP Server&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:22,&quot;label&quot;:&quot;ODBC&quot;,&quot;name&quot;:&quot;ODBC&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:23,&quot;label&quot;:&quot;MAR&quot;,&quot;name&quot;:&quot;MAR&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:24,&quot;label&quot;:&quot;GESTOR_HARRIS&quot;,&quot;name&quot;:&quot;Gestor Harris&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:25,&quot;label&quot;:&quot;AAA_3G&quot;,&quot;name&quot;:&quot;AAA 3G&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:26,&quot;label&quot;:&quot;GESTOR_NEW_NMS&quot;,&quot;name&quot;:&quot;Gestor New Nms&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:28,&quot;label&quot;:&quot;GESTOR_NETX&quot;,&quot;name&quot;:&quot;Gestor Netx&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:29,&quot;label&quot;:&quot;SISTEMA_OPERATIVO_WINDOWS&quot;,&quot;name&quot;:&quot;Sistema Operativo Windows&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:30,&quot;label&quot;:&quot;ANYPATH&quot;,&quot;name&quot;:&quot;Anypath&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:31,&quot;label&quot;:&quot;CENTIGRAM&quot;,&quot;name&quot;:&quot;Centigram&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:32,&quot;label&quot;:&quot;GSM_OSS&quot;,&quot;name&quot;:&quot;GSM OSS&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:33,&quot;label&quot;:&quot;EQUIPAMIENTO_DE_ESTACION&quot;,&quot;name&quot;:&quot;Equipamiento de Estacion&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:34,&quot;label&quot;:&quot;DYNAMIC_ROUTING&quot;,&quot;name&quot;:&quot;Dynamic Routing&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:35,&quot;label&quot;:&quot;GESTOR_HUAWEI_T2000&quot;,&quot;name&quot;:&quot;Gestor Huawei T2000&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:36,&quot;label&quot;:&quot;CMS&quot;,&quot;name&quot;:&quot;CMS&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:37,&quot;label&quot;:&quot;OMP&quot;,&quot;name&quot;:&quot;OMP&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:38,&quot;label&quot;:&quot;PLEXUS&quot;,&quot;name&quot;:&quot;Plexus&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:40,&quot;label&quot;:&quot;GESTOR_ERICSSON&quot;,&quot;name&quot;:&quot;Gestor Ericsson&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:41,&quot;label&quot;:&quot;GESTOR_NERA&quot;,&quot;name&quot;:&quot;Gestor Nera&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:42,&quot;label&quot;:&quot;GESTOR_ALU&quot;,&quot;name&quot;:&quot;Gestor ALU&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:43,&quot;label&quot;:&quot;GESTOR_ECI&quot;,&quot;name&quot;:&quot;Gestor ECI&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:44,&quot;label&quot;:&quot;GESTOR_ONMS&quot;,&quot;name&quot;:&quot;Gestor ONMS&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:45,&quot;label&quot;:&quot;GESTOR&quot;,&quot;name&quot;:&quot;Gestor&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:46,&quot;label&quot;:&quot;MISMO_EQUIPO&quot;,&quot;name&quot;:&quot;Mismo Equipo&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:47,&quot;label&quot;:&quot;NO_APLICA&quot;,&quot;name&quot;:&quot;NO APLICA&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:48,&quot;label&quot;:&quot;OTRO_CARRIER&quot;,&quot;name&quot;:&quot;OTRO CARRIER&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:49,&quot;label&quot;:&quot;PLATAFORMA_DE_MUX&quot;,&quot;name&quot;:&quot;PLATAFORMA DE MUX&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:50,&quot;label&quot;:&quot;CONEXION_FISICA&quot;,&quot;name&quot;:&quot;CONEXION FISICA&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:51,&quot;label&quot;:&quot;M2000&quot;,&quot;name&quot;:&quot;M2000&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:39,&quot;label&quot;:&quot;CORE_IP&quot;,&quot;name&quot;:&quot;CORE IP&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:52,&quot;label&quot;:&quot;THOMPSON_XMS&quot;,&quot;name&quot;:&quot;THOMPSON XMS&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:55,&quot;label&quot;:&quot;ZTE&quot;,&quot;name&quot;:&quot;ZTE&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:59,&quot;label&quot;:&quot;HUAWEI_NGIN&quot;,&quot;name&quot;:&quot;Huawei NGIN&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:60,&quot;label&quot;:&quot;ASCADE&quot;,&quot;name&quot;:&quot;ASCADE&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:70,&quot;label&quot;:&quot;CHECKPOINT&quot;,&quot;name&quot;:&quot;Checkpoint&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:62,&quot;label&quot;:&quot;CISCO&quot;,&quot;name&quot;:&quot;CISCO&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:73,&quot;label&quot;:&quot;GESTOR_SIAE&quot;,&quot;name&quot;:&quot;Gestor SIAE&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:54,&quot;label&quot;:&quot;GESTOR_HUAWEI_U2000&quot;,&quot;name&quot;:&quot;Gestor Huawei U2000&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:67,&quot;label&quot;:&quot;JUNIPER&quot;,&quot;name&quot;:&quot;Juniper&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;},{&quot;id&quot;:68,&quot;label&quot;:&quot;GESTOR_U2000_HUAWEI_LTE&quot;,&quot;name&quot;:&quot;Gestor U2000 Huawei LTE&quot;,&quot;status&quot;:1,&quot;createdBy&quot;:&quot;ROOT&quot;,&quot;updatedBy&quot;:&quot;ROOT&quot;,&quot;createdAt&quot;:&quot;2025-09-16T00:00:00&quot;,&quot;updatedAt&quot;:&quot;2025-09-16T00:00:00&quot;}],&quot;total&quot;:74,&quot;page&quot;:1,&quot;limit&quot;:1000,&quot;hasNext&quot;:false,&quot;hasPrev&quot;:false,&quot;next&quot;:1,&quot;prev&quot;:1,&quot;pages&quot;:1,&quot;last&quot;:1,&quot;first&quot;:1},&quot;timestamp&quot;:1762135876939}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.success == true</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.data == '#array'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseText = karate.pretty(response)</span>
+
+  <span class="lead-duration duration">0.050</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def isValid = schemaUtil.isValid(schemaText, responseText)</span>
+
+  <span class="lead-duration duration">0.173</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match isValid == true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print 'Total de type sources encontrados:', response.data.data.length</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>22:11:17.551 [print] Total de type sources encontrados: 74 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>22:11:17.557 [print] {
+  &quot;success&quot;: true,
+  &quot;data&quot;: {
+    &quot;data&quot;: [
+      {
+        &quot;id&quot;: 53,
+        &quot;label&quot;: &quot;SART&quot;,
+        &quot;name&quot;: &quot;SART&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 58,
+        &quot;label&quot;: &quot;GESTOR_5620_SAM&quot;,
+        &quot;name&quot;: &quot;Gestor 5620 SAM&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 65,
+        &quot;label&quot;: &quot;MAVENIR&quot;,
+        &quot;name&quot;: &quot;Mavenir&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 66,
+        &quot;label&quot;: &quot;ACISION&quot;,
+        &quot;name&quot;: &quot;Acision&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 64,
+        &quot;label&quot;: &quot;SANDVINE&quot;,
+        &quot;name&quot;: &quot;Sandvine&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 71,
+        &quot;label&quot;: &quot;GESTOR_HUAWEI_U2020_CORE&quot;,
+        &quot;name&quot;: &quot;Gestor Huawei U2020 Core&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 72,
+        &quot;label&quot;: &quot;NECTACT&quot;,
+        &quot;name&quot;: &quot;NectAct&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 75,
+        &quot;label&quot;: &quot;CORE_HUAWEI_U2020&quot;,
+        &quot;name&quot;: &quot;Core Huawei u2020&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 61,
+        &quot;label&quot;: &quot;GESTOR_ASA&quot;,
+        &quot;name&quot;: &quot;GESTOR ASA&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 74,
+        &quot;label&quot;: &quot;NE8000-M14&quot;,
+        &quot;name&quot;: &quot;NE8000-M14 &quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 56,
+        &quot;label&quot;: &quot;OSS_NSN&quot;,
+        &quot;name&quot;: &quot;OSS NSN&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 57,
+        &quot;label&quot;: &quot;CGNAT&quot;,
+        &quot;name&quot;: &quot;CGNAT&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 63,
+        &quot;label&quot;: &quot;DELL&quot;,
+        &quot;name&quot;: &quot;DELL&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 69,
+        &quot;label&quot;: &quot;INFOBLOX_DNS&quot;,
+        &quot;name&quot;: &quot;INFOBLOX DNS&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 1,
+        &quot;label&quot;: &quot;ECP&quot;,
+        &quot;name&quot;: &quot;ECP&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 2,
+        &quot;label&quot;: &quot;SWITCHMATE&quot;,
+        &quot;name&quot;: &quot;SwitchMATE&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 3,
+        &quot;label&quot;: &quot;OMC&quot;,
+        &quot;name&quot;: &quot;OMC&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 4,
+        &quot;label&quot;: &quot;STP-ITU&quot;,
+        &quot;name&quot;: &quot;STP-ITU&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 5,
+        &quot;label&quot;: &quot;ANS&quot;,
+        &quot;name&quot;: &quot;ANS&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 6,
+        &quot;label&quot;: &quot;AXE&quot;,
+        &quot;name&quot;: &quot;AXE&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 7,
+        &quot;label&quot;: &quot;NCC&quot;,
+        &quot;name&quot;: &quot;NCC&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 8,
+        &quot;label&quot;: &quot;OPEN_VIEW&quot;,
+        &quot;name&quot;: &quot;Open View&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 9,
+        &quot;label&quot;: &quot;5ESS&quot;,
+        &quot;name&quot;: &quot;5ESS&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 10,
+        &quot;label&quot;: &quot;STP-ANSI&quot;,
+        &quot;name&quot;: &quot;STP-ANSI&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 11,
+        &quot;label&quot;: &quot;HLR&quot;,
+        &quot;name&quot;: &quot;HLR&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 12,
+        &quot;label&quot;: &quot;IS-41&quot;,
+        &quot;name&quot;: &quot;IS-41&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 13,
+        &quot;label&quot;: &quot;SMS&quot;,
+        &quot;name&quot;: &quot;SMS&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 14,
+        &quot;label&quot;: &quot;T-LINK_EXTENDERS&quot;,
+        &quot;name&quot;: &quot;T-Link Extenders&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 15,
+        &quot;label&quot;: &quot;MANAGER_TT&quot;,
+        &quot;name&quot;: &quot;Manager TT&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 16,
+        &quot;label&quot;: &quot;GESTOR_ENM&quot;,
+        &quot;name&quot;: &quot;Gestor ENM&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 17,
+        &quot;label&quot;: &quot;GESTOR_ALCATEL&quot;,
+        &quot;name&quot;: &quot;Gestor Alcatel&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 18,
+        &quot;label&quot;: &quot;HIQ&quot;,
+        &quot;name&quot;: &quot;HiQ&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 19,
+        &quot;label&quot;: &quot;STP_TEKELEC_ANSI&quot;,
+        &quot;name&quot;: &quot;STP Tekelec ANSI&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 20,
+        &quot;label&quot;: &quot;GESTOR_5620&quot;,
+        &quot;name&quot;: &quot;Gestor 5620&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 21,
+        &quot;label&quot;: &quot;FTP_SERVER&quot;,
+        &quot;name&quot;: &quot;FTP Server&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 22,
+        &quot;label&quot;: &quot;ODBC&quot;,
+        &quot;name&quot;: &quot;ODBC&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 23,
+        &quot;label&quot;: &quot;MAR&quot;,
+        &quot;name&quot;: &quot;MAR&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 24,
+        &quot;label&quot;: &quot;GESTOR_HARRIS&quot;,
+        &quot;name&quot;: &quot;Gestor Harris&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 25,
+        &quot;label&quot;: &quot;AAA_3G&quot;,
+        &quot;name&quot;: &quot;AAA 3G&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 26,
+        &quot;label&quot;: &quot;GESTOR_NEW_NMS&quot;,
+        &quot;name&quot;: &quot;Gestor New Nms&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 28,
+        &quot;label&quot;: &quot;GESTOR_NETX&quot;,
+        &quot;name&quot;: &quot;Gestor Netx&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 29,
+        &quot;label&quot;: &quot;SISTEMA_OPERATIVO_WINDOWS&quot;,
+        &quot;name&quot;: &quot;Sistema Operativo Windows&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 30,
+        &quot;label&quot;: &quot;ANYPATH&quot;,
+        &quot;name&quot;: &quot;Anypath&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 31,
+        &quot;label&quot;: &quot;CENTIGRAM&quot;,
+        &quot;name&quot;: &quot;Centigram&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 32,
+        &quot;label&quot;: &quot;GSM_OSS&quot;,
+        &quot;name&quot;: &quot;GSM OSS&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 33,
+        &quot;label&quot;: &quot;EQUIPAMIENTO_DE_ESTACION&quot;,
+        &quot;name&quot;: &quot;Equipamiento de Estacion&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 34,
+        &quot;label&quot;: &quot;DYNAMIC_ROUTING&quot;,
+        &quot;name&quot;: &quot;Dynamic Routing&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 35,
+        &quot;label&quot;: &quot;GESTOR_HUAWEI_T2000&quot;,
+        &quot;name&quot;: &quot;Gestor Huawei T2000&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 36,
+        &quot;label&quot;: &quot;CMS&quot;,
+        &quot;name&quot;: &quot;CMS&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 37,
+        &quot;label&quot;: &quot;OMP&quot;,
+        &quot;name&quot;: &quot;OMP&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 38,
+        &quot;label&quot;: &quot;PLEXUS&quot;,
+        &quot;name&quot;: &quot;Plexus&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 40,
+        &quot;label&quot;: &quot;GESTOR_ERICSSON&quot;,
+        &quot;name&quot;: &quot;Gestor Ericsson&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 41,
+        &quot;label&quot;: &quot;GESTOR_NERA&quot;,
+        &quot;name&quot;: &quot;Gestor Nera&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 42,
+        &quot;label&quot;: &quot;GESTOR_ALU&quot;,
+        &quot;name&quot;: &quot;Gestor ALU&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 43,
+        &quot;label&quot;: &quot;GESTOR_ECI&quot;,
+        &quot;name&quot;: &quot;Gestor ECI&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 44,
+        &quot;label&quot;: &quot;GESTOR_ONMS&quot;,
+        &quot;name&quot;: &quot;Gestor ONMS&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 45,
+        &quot;label&quot;: &quot;GESTOR&quot;,
+        &quot;name&quot;: &quot;Gestor&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 46,
+        &quot;label&quot;: &quot;MISMO_EQUIPO&quot;,
+        &quot;name&quot;: &quot;Mismo Equipo&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 47,
+        &quot;label&quot;: &quot;NO_APLICA&quot;,
+        &quot;name&quot;: &quot;NO APLICA&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 48,
+        &quot;label&quot;: &quot;OTRO_CARRIER&quot;,
+        &quot;name&quot;: &quot;OTRO CARRIER&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 49,
+        &quot;label&quot;: &quot;PLATAFORMA_DE_MUX&quot;,
+        &quot;name&quot;: &quot;PLATAFORMA DE MUX&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 50,
+        &quot;label&quot;: &quot;CONEXION_FISICA&quot;,
+        &quot;name&quot;: &quot;CONEXION FISICA&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 51,
+        &quot;label&quot;: &quot;M2000&quot;,
+        &quot;name&quot;: &quot;M2000&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 39,
+        &quot;label&quot;: &quot;CORE_IP&quot;,
+        &quot;name&quot;: &quot;CORE IP&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 52,
+        &quot;label&quot;: &quot;THOMPSON_XMS&quot;,
+        &quot;name&quot;: &quot;THOMPSON XMS&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 55,
+        &quot;label&quot;: &quot;ZTE&quot;,
+        &quot;name&quot;: &quot;ZTE&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 59,
+        &quot;label&quot;: &quot;HUAWEI_NGIN&quot;,
+        &quot;name&quot;: &quot;Huawei NGIN&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 60,
+        &quot;label&quot;: &quot;ASCADE&quot;,
+        &quot;name&quot;: &quot;ASCADE&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 70,
+        &quot;label&quot;: &quot;CHECKPOINT&quot;,
+        &quot;name&quot;: &quot;Checkpoint&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 62,
+        &quot;label&quot;: &quot;CISCO&quot;,
+        &quot;name&quot;: &quot;CISCO&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 73,
+        &quot;label&quot;: &quot;GESTOR_SIAE&quot;,
+        &quot;name&quot;: &quot;Gestor SIAE&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 54,
+        &quot;label&quot;: &quot;GESTOR_HUAWEI_U2000&quot;,
+        &quot;name&quot;: &quot;Gestor Huawei U2000&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 67,
+        &quot;label&quot;: &quot;JUNIPER&quot;,
+        &quot;name&quot;: &quot;Juniper&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      },
+      {
+        &quot;id&quot;: 68,
+        &quot;label&quot;: &quot;GESTOR_U2000_HUAWEI_LTE&quot;,
+        &quot;name&quot;: &quot;Gestor U2000 Huawei LTE&quot;,
+        &quot;status&quot;: 1,
+        &quot;createdBy&quot;: &quot;ROOT&quot;,
+        &quot;updatedBy&quot;: &quot;ROOT&quot;,
+        &quot;createdAt&quot;: &quot;2025-09-16T00:00:00&quot;,
+        &quot;updatedAt&quot;: &quot;2025-09-16T00:00:00&quot;
+      }
+    ],
+    &quot;total&quot;: 74,
+    &quot;page&quot;: 1,
+    &quot;limit&quot;: 1000,
+    &quot;hasNext&quot;: false,
+    &quot;hasPrev&quot;: false,
+    &quot;next&quot;: 1,
+    &quot;prev&quot;: 1,
+    &quot;pages&quot;: 1,
+    &quot;last&quot;: 1,
+    &quot;first&quot;: 1
+  },
+  &quot;timestamp&quot;: 1762135876939
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print '=== TIEMPO DE RESPUESTA DEL FEATURE ===', responseTime / 1000, 's'</span>
+
+  <span class="lead-duration duration">0.026</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>22:11:17.584 [print] === TIEMPO DE RESPUESTA DEL FEATURE === 1.676 s 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,2241 @@
+22:11:03.802 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:11:04.050 [main] WARN  com.intuit.karate.Suite - failed to backup existing dir: target
+22:11:04.100 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+22:11:10.815 [main] DEBUG com.intuit.karate - request:
+1 > POST https://ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/intraLogin
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"login":"tns01","clave":"T3st2024.+-"}
+
+22:11:11.941 [main] DEBUG com.intuit.karate - response time in milliseconds: 1118
+1 < 200
+1 < content-type: application/json
+1 < content-length: 326
+1 < set-cookie: c4e2248e6317d37faa062fd3ce9304d4=fd39bf078e5818d81837c480f471c390; path=/; HttpOnly
+1 < Set-Cookie: c4e2248e6317d37faa062fd3ce9304d4=fd39bf078e5818d81837c480f471c390; path=/; HttpOnly
+{"token":"eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjY2QkM1OTNFOEUxODcyNDhGMDFFMjkzREE3RDM4RDdFIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM1ODcxLCJleHAiOjE3NjIxMzk0NzF9.Pdu0bx-F49rwoiysqONNMJFQ4dv03pF6xPCGgpBV5iQ29g9hWN-VTbIu_zXMfIFL"}
+
+22:11:15.454 [main] INFO  com.intuit.karate - [print] HEADERS usados en obtener type sources: {
+  "Content-Type": "application/json",
+  "X-CORRELATION-ID": "1445|E11011|234234",
+  "X-TOKEN-ID": "eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjY2QkM1OTNFOEUxODcyNDhGMDFFMjkzREE3RDM4RDdFIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM1ODcxLCJleHAiOjE3NjIxMzk0NzF9.Pdu0bx-F49rwoiysqONNMJFQ4dv03pF6xPCGgpBV5iQ29g9hWN-VTbIu_zXMfIFL"
+}
+ 
+22:11:15.459 [main] INFO  com.intuit.karate - [print] TOKEN obtenido: eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjY2QkM1OTNFOEUxODcyNDhGMDFFMjkzREE3RDM4RDdFIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM1ODcxLCJleHAiOjE3NjIxMzk0NzF9.Pdu0bx-F49rwoiysqONNMJFQ4dv03pF6xPCGgpBV5iQ29g9hWN-VTbIu_zXMfIFL 
+22:11:15.619 [main] DEBUG com.intuit.karate - request:
+1 > GET https://portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/api/v1/portal/ref-type-sources?limit=1000&page=1
+1 > Content-Type: application/json
+1 > X-CORRELATION-ID: 1445|E11011|234234
+1 > X-TOKEN-ID: eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjY2QkM1OTNFOEUxODcyNDhGMDFFMjkzREE3RDM4RDdFIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM1ODcxLCJleHAiOjE3NjIxMzk0NzF9.Pdu0bx-F49rwoiysqONNMJFQ4dv03pF6xPCGgpBV5iQ29g9hWN-VTbIu_zXMfIFL
+1 > Host: portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:11:17.297 [main] DEBUG com.intuit.karate - response time in milliseconds: 1676
+1 < 200
+1 < transfer-encoding: chunked
+1 < content-type: application/json;charset=UTF-8
+1 < set-cookie: e04ac28d5e084ee6fdbd7bc1d4092a06=e6679c634420882e35307b805c67c783; path=/; HttpOnly
+1 < Set-Cookie: e04ac28d5e084ee6fdbd7bc1d4092a06=e6679c634420882e35307b805c67c783; path=/; HttpOnly
+{"success":true,"data":{"data":[{"id":53,"label":"SART","name":"SART","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":58,"label":"GESTOR_5620_SAM","name":"Gestor 5620 SAM","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":65,"label":"MAVENIR","name":"Mavenir","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":66,"label":"ACISION","name":"Acision","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":64,"label":"SANDVINE","name":"Sandvine","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":71,"label":"GESTOR_HUAWEI_U2020_CORE","name":"Gestor Huawei U2020 Core","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":72,"label":"NECTACT","name":"NectAct","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":75,"label":"CORE_HUAWEI_U2020","name":"Core Huawei u2020","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":61,"label":"GESTOR_ASA","name":"GESTOR ASA","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":74,"label":"NE8000-M14","name":"NE8000-M14 ","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":56,"label":"OSS_NSN","name":"OSS NSN","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":57,"label":"CGNAT","name":"CGNAT","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":63,"label":"DELL","name":"DELL","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":69,"label":"INFOBLOX_DNS","name":"INFOBLOX DNS","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":1,"label":"ECP","name":"ECP","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":2,"label":"SWITCHMATE","name":"SwitchMATE","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":3,"label":"OMC","name":"OMC","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":4,"label":"STP-ITU","name":"STP-ITU","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":5,"label":"ANS","name":"ANS","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":6,"label":"AXE","name":"AXE","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":7,"label":"NCC","name":"NCC","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":8,"label":"OPEN_VIEW","name":"Open View","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":9,"label":"5ESS","name":"5ESS","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":10,"label":"STP-ANSI","name":"STP-ANSI","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":11,"label":"HLR","name":"HLR","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":12,"label":"IS-41","name":"IS-41","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":13,"label":"SMS","name":"SMS","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":14,"label":"T-LINK_EXTENDERS","name":"T-Link Extenders","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":15,"label":"MANAGER_TT","name":"Manager TT","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":16,"label":"GESTOR_ENM","name":"Gestor ENM","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":17,"label":"GESTOR_ALCATEL","name":"Gestor Alcatel","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":18,"label":"HIQ","name":"HiQ","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":19,"label":"STP_TEKELEC_ANSI","name":"STP Tekelec ANSI","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":20,"label":"GESTOR_5620","name":"Gestor 5620","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":21,"label":"FTP_SERVER","name":"FTP Server","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":22,"label":"ODBC","name":"ODBC","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":23,"label":"MAR","name":"MAR","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":24,"label":"GESTOR_HARRIS","name":"Gestor Harris","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":25,"label":"AAA_3G","name":"AAA 3G","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":26,"label":"GESTOR_NEW_NMS","name":"Gestor New Nms","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":28,"label":"GESTOR_NETX","name":"Gestor Netx","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":29,"label":"SISTEMA_OPERATIVO_WINDOWS","name":"Sistema Operativo Windows","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":30,"label":"ANYPATH","name":"Anypath","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":31,"label":"CENTIGRAM","name":"Centigram","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":32,"label":"GSM_OSS","name":"GSM OSS","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":33,"label":"EQUIPAMIENTO_DE_ESTACION","name":"Equipamiento de Estacion","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":34,"label":"DYNAMIC_ROUTING","name":"Dynamic Routing","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":35,"label":"GESTOR_HUAWEI_T2000","name":"Gestor Huawei T2000","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":36,"label":"CMS","name":"CMS","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":37,"label":"OMP","name":"OMP","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":38,"label":"PLEXUS","name":"Plexus","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":40,"label":"GESTOR_ERICSSON","name":"Gestor Ericsson","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":41,"label":"GESTOR_NERA","name":"Gestor Nera","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":42,"label":"GESTOR_ALU","name":"Gestor ALU","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":43,"label":"GESTOR_ECI","name":"Gestor ECI","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":44,"label":"GESTOR_ONMS","name":"Gestor ONMS","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":45,"label":"GESTOR","name":"Gestor","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":46,"label":"MISMO_EQUIPO","name":"Mismo Equipo","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":47,"label":"NO_APLICA","name":"NO APLICA","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":48,"label":"OTRO_CARRIER","name":"OTRO CARRIER","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":49,"label":"PLATAFORMA_DE_MUX","name":"PLATAFORMA DE MUX","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":50,"label":"CONEXION_FISICA","name":"CONEXION FISICA","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":51,"label":"M2000","name":"M2000","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":39,"label":"CORE_IP","name":"CORE IP","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":52,"label":"THOMPSON_XMS","name":"THOMPSON XMS","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":55,"label":"ZTE","name":"ZTE","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":59,"label":"HUAWEI_NGIN","name":"Huawei NGIN","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":60,"label":"ASCADE","name":"ASCADE","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":70,"label":"CHECKPOINT","name":"Checkpoint","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":62,"label":"CISCO","name":"CISCO","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":73,"label":"GESTOR_SIAE","name":"Gestor SIAE","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":54,"label":"GESTOR_HUAWEI_U2000","name":"Gestor Huawei U2000","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":67,"label":"JUNIPER","name":"Juniper","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":68,"label":"GESTOR_U2000_HUAWEI_LTE","name":"Gestor U2000 Huawei LTE","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"}],"total":74,"page":1,"limit":1000,"hasNext":false,"hasPrev":false,"next":1,"prev":1,"pages":1,"last":1,"first":1},"timestamp":1762135876939}
+
+22:11:17.551 [main] INFO  com.intuit.karate - [print] Total de type sources encontrados: 74 
+22:11:17.552 [main] INFO  com.intuit.karate - [print] {
+  "success": true,
+  "data": {
+    "data": [
+      {
+        "id": 53,
+        "label": "SART",
+        "name": "SART",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 58,
+        "label": "GESTOR_5620_SAM",
+        "name": "Gestor 5620 SAM",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 65,
+        "label": "MAVENIR",
+        "name": "Mavenir",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 66,
+        "label": "ACISION",
+        "name": "Acision",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 64,
+        "label": "SANDVINE",
+        "name": "Sandvine",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 71,
+        "label": "GESTOR_HUAWEI_U2020_CORE",
+        "name": "Gestor Huawei U2020 Core",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 72,
+        "label": "NECTACT",
+        "name": "NectAct",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 75,
+        "label": "CORE_HUAWEI_U2020",
+        "name": "Core Huawei u2020",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 61,
+        "label": "GESTOR_ASA",
+        "name": "GESTOR ASA",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 74,
+        "label": "NE8000-M14",
+        "name": "NE8000-M14 ",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 56,
+        "label": "OSS_NSN",
+        "name": "OSS NSN",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 57,
+        "label": "CGNAT",
+        "name": "CGNAT",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 63,
+        "label": "DELL",
+        "name": "DELL",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 69,
+        "label": "INFOBLOX_DNS",
+        "name": "INFOBLOX DNS",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 1,
+        "label": "ECP",
+        "name": "ECP",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 2,
+        "label": "SWITCHMATE",
+        "name": "SwitchMATE",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 3,
+        "label": "OMC",
+        "name": "OMC",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 4,
+        "label": "STP-ITU",
+        "name": "STP-ITU",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 5,
+        "label": "ANS",
+        "name": "ANS",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 6,
+        "label": "AXE",
+        "name": "AXE",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 7,
+        "label": "NCC",
+        "name": "NCC",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 8,
+        "label": "OPEN_VIEW",
+        "name": "Open View",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 9,
+        "label": "5ESS",
+        "name": "5ESS",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 10,
+        "label": "STP-ANSI",
+        "name": "STP-ANSI",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 11,
+        "label": "HLR",
+        "name": "HLR",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 12,
+        "label": "IS-41",
+        "name": "IS-41",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 13,
+        "label": "SMS",
+        "name": "SMS",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 14,
+        "label": "T-LINK_EXTENDERS",
+        "name": "T-Link Extenders",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 15,
+        "label": "MANAGER_TT",
+        "name": "Manager TT",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 16,
+        "label": "GESTOR_ENM",
+        "name": "Gestor ENM",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 17,
+        "label": "GESTOR_ALCATEL",
+        "name": "Gestor Alcatel",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 18,
+        "label": "HIQ",
+        "name": "HiQ",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 19,
+        "label": "STP_TEKELEC_ANSI",
+        "name": "STP Tekelec ANSI",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 20,
+        "label": "GESTOR_5620",
+        "name": "Gestor 5620",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 21,
+        "label": "FTP_SERVER",
+        "name": "FTP Server",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 22,
+        "label": "ODBC",
+        "name": "ODBC",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 23,
+        "label": "MAR",
+        "name": "MAR",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 24,
+        "label": "GESTOR_HARRIS",
+        "name": "Gestor Harris",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 25,
+        "label": "AAA_3G",
+        "name": "AAA 3G",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 26,
+        "label": "GESTOR_NEW_NMS",
+        "name": "Gestor New Nms",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 28,
+        "label": "GESTOR_NETX",
+        "name": "Gestor Netx",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 29,
+        "label": "SISTEMA_OPERATIVO_WINDOWS",
+        "name": "Sistema Operativo Windows",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 30,
+        "label": "ANYPATH",
+        "name": "Anypath",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 31,
+        "label": "CENTIGRAM",
+        "name": "Centigram",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 32,
+        "label": "GSM_OSS",
+        "name": "GSM OSS",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 33,
+        "label": "EQUIPAMIENTO_DE_ESTACION",
+        "name": "Equipamiento de Estacion",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 34,
+        "label": "DYNAMIC_ROUTING",
+        "name": "Dynamic Routing",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 35,
+        "label": "GESTOR_HUAWEI_T2000",
+        "name": "Gestor Huawei T2000",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 36,
+        "label": "CMS",
+        "name": "CMS",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 37,
+        "label": "OMP",
+        "name": "OMP",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 38,
+        "label": "PLEXUS",
+        "name": "Plexus",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 40,
+        "label": "GESTOR_ERICSSON",
+        "name": "Gestor Ericsson",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 41,
+        "label": "GESTOR_NERA",
+        "name": "Gestor Nera",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 42,
+        "label": "GESTOR_ALU",
+        "name": "Gestor ALU",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 43,
+        "label": "GESTOR_ECI",
+        "name": "Gestor ECI",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 44,
+        "label": "GESTOR_ONMS",
+        "name": "Gestor ONMS",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 45,
+        "label": "GESTOR",
+        "name": "Gestor",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 46,
+        "label": "MISMO_EQUIPO",
+        "name": "Mismo Equipo",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 47,
+        "label": "NO_APLICA",
+        "name": "NO APLICA",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 48,
+        "label": "OTRO_CARRIER",
+        "name": "OTRO CARRIER",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 49,
+        "label": "PLATAFORMA_DE_MUX",
+        "name": "PLATAFORMA DE MUX",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 50,
+        "label": "CONEXION_FISICA",
+        "name": "CONEXION FISICA",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 51,
+        "label": "M2000",
+        "name": "M2000",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 39,
+        "label": "CORE_IP",
+        "name": "CORE IP",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 52,
+        "label": "THOMPSON_XMS",
+        "name": "THOMPSON XMS",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 55,
+        "label": "ZTE",
+        "name": "ZTE",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 59,
+        "label": "HUAWEI_NGIN",
+        "name": "Huawei NGIN",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 60,
+        "label": "ASCADE",
+        "name": "ASCADE",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 70,
+        "label": "CHECKPOINT",
+        "name": "Checkpoint",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 62,
+        "label": "CISCO",
+        "name": "CISCO",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 73,
+        "label": "GESTOR_SIAE",
+        "name": "Gestor SIAE",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 54,
+        "label": "GESTOR_HUAWEI_U2000",
+        "name": "Gestor Huawei U2000",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 67,
+        "label": "JUNIPER",
+        "name": "Juniper",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 68,
+        "label": "GESTOR_U2000_HUAWEI_LTE",
+        "name": "Gestor U2000 Huawei LTE",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      }
+    ],
+    "total": 74,
+    "page": 1,
+    "limit": 1000,
+    "hasNext": false,
+    "hasPrev": false,
+    "next": 1,
+    "prev": 1,
+    "pages": 1,
+    "last": 1,
+    "first": 1
+  },
+  "timestamp": 1762135876939
+}
+ 
+22:11:17.582 [main] INFO  com.intuit.karate - [print] === TIEMPO DE RESPUESTA DEL FEATURE === 1.676 s 
+22:11:20.512 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 6 of 6 (0 remaining) classpath:api/obtenerTypeSources.feature
+22:16:37.200 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:16:37.212 [main] WARN  com.intuit.karate.Suite - failed to backup existing dir: target
+22:16:37.226 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+22:16:40.799 [main] DEBUG com.intuit.karate - request:
+1 > POST https://ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/intraLogin
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"login":"tns01","clave":"T3st2024.+-"}
+
+22:16:41.915 [main] DEBUG com.intuit.karate - response time in milliseconds: 1103
+1 < 200
+1 < content-type: application/json
+1 < content-length: 326
+1 < set-cookie: c4e2248e6317d37faa062fd3ce9304d4=111be4bf5b2ba37de32b640f6ee05093; path=/; HttpOnly
+1 < Set-Cookie: c4e2248e6317d37faa062fd3ce9304d4=111be4bf5b2ba37de32b640f6ee05093; path=/; HttpOnly
+{"token":"eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjlGN0IwNUY1Nzk1Qzc5RjNDMDcwMjVDRDgzOTUxMkUxIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2MjAxLCJleHAiOjE3NjIxMzk4MDF9.5As-vF3T99ZGsmd_KCiDhVXTSTPNWl2maHlhgJEaudklPETjEXXGEA0MqdHD9HMi"}
+
+22:16:42.624 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:api/obtenerTypeSources.feature - call by tag at line 23: obtenerTodosLosTypeSources
+22:16:42.653 [main] DEBUG com.intuit.karate - request:
+1 > POST https://ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/intraLogin
+1 > Content-Type: application/json; charset=UTF-8
+1 > X-CORRELATION-ID: 1445|E11011|234234
+1 > X-TOKEN-ID: eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjlGN0IwNUY1Nzk1Qzc5RjNDMDcwMjVDRDgzOTUxMkUxIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2MjAxLCJleHAiOjE3NjIxMzk4MDF9.5As-vF3T99ZGsmd_KCiDhVXTSTPNWl2maHlhgJEaudklPETjEXXGEA0MqdHD9HMi
+1 > Content-Length: 39
+1 > Host: ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"login":"tns01","clave":"T3st2024.+-"}
+
+22:16:43.255 [main] DEBUG com.intuit.karate - response time in milliseconds: 602
+1 < 200
+1 < content-type: application/json
+1 < content-length: 326
+1 < set-cookie: c4e2248e6317d37faa062fd3ce9304d4=fd39bf078e5818d81837c480f471c390; path=/; HttpOnly
+1 < Set-Cookie: c4e2248e6317d37faa062fd3ce9304d4=fd39bf078e5818d81837c480f471c390; path=/; HttpOnly
+{"token":"eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjAxQjU1Njc5RTJFNzk4MTg2MzA3RTA1M0I5NDU4QzZEIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2MjAzLCJleHAiOjE3NjIxMzk4MDN9.BCzOcJBPw62h78mRVQ2YZ4FrlDE0-B90iLlaTyrrlUcWg3z4Ifz5KPlJbHM74yA6"}
+
+22:16:43.273 [main] INFO  com.intuit.karate - [print] HEADERS usados en obtener type sources: {
+  "Content-Type": "application/json",
+  "X-CORRELATION-ID": "1445|E11011|234234",
+  "X-TOKEN-ID": "eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjAxQjU1Njc5RTJFNzk4MTg2MzA3RTA1M0I5NDU4QzZEIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2MjAzLCJleHAiOjE3NjIxMzk4MDN9.BCzOcJBPw62h78mRVQ2YZ4FrlDE0-B90iLlaTyrrlUcWg3z4Ifz5KPlJbHM74yA6"
+}
+ 
+22:16:43.274 [main] INFO  com.intuit.karate - [print] TOKEN obtenido: eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjAxQjU1Njc5RTJFNzk4MTg2MzA3RTA1M0I5NDU4QzZEIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2MjAzLCJleHAiOjE3NjIxMzk4MDN9.BCzOcJBPw62h78mRVQ2YZ4FrlDE0-B90iLlaTyrrlUcWg3z4Ifz5KPlJbHM74yA6 
+22:16:43.283 [main] DEBUG com.intuit.karate - request:
+1 > GET https://portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/api/v1/portal/ref-type-sources?limit=1000&page=1
+1 > Content-Type: application/json
+1 > X-CORRELATION-ID: 1445|E11011|234234
+1 > X-TOKEN-ID: eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjAxQjU1Njc5RTJFNzk4MTg2MzA3RTA1M0I5NDU4QzZEIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2MjAzLCJleHAiOjE3NjIxMzk4MDN9.BCzOcJBPw62h78mRVQ2YZ4FrlDE0-B90iLlaTyrrlUcWg3z4Ifz5KPlJbHM74yA6
+1 > Host: portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:16:44.375 [main] DEBUG com.intuit.karate - response time in milliseconds: 1092
+1 < 200
+1 < transfer-encoding: chunked
+1 < content-type: application/json;charset=UTF-8
+1 < set-cookie: e04ac28d5e084ee6fdbd7bc1d4092a06=ea10ecf8d95bb6244abca4c8193e7f38; path=/; HttpOnly
+1 < Set-Cookie: e04ac28d5e084ee6fdbd7bc1d4092a06=ea10ecf8d95bb6244abca4c8193e7f38; path=/; HttpOnly
+{"success":true,"data":{"data":[{"id":53,"label":"SART","name":"SART","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":58,"label":"GESTOR_5620_SAM","name":"Gestor 5620 SAM","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":65,"label":"MAVENIR","name":"Mavenir","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":66,"label":"ACISION","name":"Acision","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":64,"label":"SANDVINE","name":"Sandvine","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":71,"label":"GESTOR_HUAWEI_U2020_CORE","name":"Gestor Huawei U2020 Core","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":72,"label":"NECTACT","name":"NectAct","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":75,"label":"CORE_HUAWEI_U2020","name":"Core Huawei u2020","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":61,"label":"GESTOR_ASA","name":"GESTOR ASA","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":74,"label":"NE8000-M14","name":"NE8000-M14 ","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":56,"label":"OSS_NSN","name":"OSS NSN","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":57,"label":"CGNAT","name":"CGNAT","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":63,"label":"DELL","name":"DELL","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":69,"label":"INFOBLOX_DNS","name":"INFOBLOX DNS","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":1,"label":"ECP","name":"ECP","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":2,"label":"SWITCHMATE","name":"SwitchMATE","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":3,"label":"OMC","name":"OMC","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":4,"label":"STP-ITU","name":"STP-ITU","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":5,"label":"ANS","name":"ANS","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":6,"label":"AXE","name":"AXE","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":7,"label":"NCC","name":"NCC","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":8,"label":"OPEN_VIEW","name":"Open View","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":9,"label":"5ESS","name":"5ESS","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":10,"label":"STP-ANSI","name":"STP-ANSI","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":11,"label":"HLR","name":"HLR","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":12,"label":"IS-41","name":"IS-41","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":13,"label":"SMS","name":"SMS","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":14,"label":"T-LINK_EXTENDERS","name":"T-Link Extenders","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":15,"label":"MANAGER_TT","name":"Manager TT","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":16,"label":"GESTOR_ENM","name":"Gestor ENM","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":17,"label":"GESTOR_ALCATEL","name":"Gestor Alcatel","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":18,"label":"HIQ","name":"HiQ","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":19,"label":"STP_TEKELEC_ANSI","name":"STP Tekelec ANSI","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":20,"label":"GESTOR_5620","name":"Gestor 5620","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":21,"label":"FTP_SERVER","name":"FTP Server","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":22,"label":"ODBC","name":"ODBC","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":23,"label":"MAR","name":"MAR","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":24,"label":"GESTOR_HARRIS","name":"Gestor Harris","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":25,"label":"AAA_3G","name":"AAA 3G","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":26,"label":"GESTOR_NEW_NMS","name":"Gestor New Nms","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":28,"label":"GESTOR_NETX","name":"Gestor Netx","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":29,"label":"SISTEMA_OPERATIVO_WINDOWS","name":"Sistema Operativo Windows","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":30,"label":"ANYPATH","name":"Anypath","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":31,"label":"CENTIGRAM","name":"Centigram","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":32,"label":"GSM_OSS","name":"GSM OSS","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":33,"label":"EQUIPAMIENTO_DE_ESTACION","name":"Equipamiento de Estacion","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":34,"label":"DYNAMIC_ROUTING","name":"Dynamic Routing","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":35,"label":"GESTOR_HUAWEI_T2000","name":"Gestor Huawei T2000","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":36,"label":"CMS","name":"CMS","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":37,"label":"OMP","name":"OMP","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":38,"label":"PLEXUS","name":"Plexus","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":40,"label":"GESTOR_ERICSSON","name":"Gestor Ericsson","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":41,"label":"GESTOR_NERA","name":"Gestor Nera","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":42,"label":"GESTOR_ALU","name":"Gestor ALU","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":43,"label":"GESTOR_ECI","name":"Gestor ECI","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":44,"label":"GESTOR_ONMS","name":"Gestor ONMS","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":45,"label":"GESTOR","name":"Gestor","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":46,"label":"MISMO_EQUIPO","name":"Mismo Equipo","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":47,"label":"NO_APLICA","name":"NO APLICA","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":48,"label":"OTRO_CARRIER","name":"OTRO CARRIER","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":49,"label":"PLATAFORMA_DE_MUX","name":"PLATAFORMA DE MUX","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":50,"label":"CONEXION_FISICA","name":"CONEXION FISICA","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":51,"label":"M2000","name":"M2000","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":39,"label":"CORE_IP","name":"CORE IP","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":52,"label":"THOMPSON_XMS","name":"THOMPSON XMS","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":55,"label":"ZTE","name":"ZTE","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":59,"label":"HUAWEI_NGIN","name":"Huawei NGIN","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":60,"label":"ASCADE","name":"ASCADE","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":70,"label":"CHECKPOINT","name":"Checkpoint","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":62,"label":"CISCO","name":"CISCO","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":73,"label":"GESTOR_SIAE","name":"Gestor SIAE","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":54,"label":"GESTOR_HUAWEI_U2000","name":"Gestor Huawei U2000","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":67,"label":"JUNIPER","name":"Juniper","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},{"id":68,"label":"GESTOR_U2000_HUAWEI_LTE","name":"Gestor U2000 Huawei LTE","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"}],"total":74,"page":1,"limit":1000,"hasNext":false,"hasPrev":false,"next":1,"prev":1,"pages":1,"last":1,"first":1},"timestamp":1762136204162}
+
+22:16:44.475 [main] INFO  com.intuit.karate - [print] Total de type sources encontrados: 74 
+22:16:44.477 [main] INFO  com.intuit.karate - [print] {
+  "success": true,
+  "data": {
+    "data": [
+      {
+        "id": 53,
+        "label": "SART",
+        "name": "SART",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 58,
+        "label": "GESTOR_5620_SAM",
+        "name": "Gestor 5620 SAM",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 65,
+        "label": "MAVENIR",
+        "name": "Mavenir",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 66,
+        "label": "ACISION",
+        "name": "Acision",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 64,
+        "label": "SANDVINE",
+        "name": "Sandvine",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 71,
+        "label": "GESTOR_HUAWEI_U2020_CORE",
+        "name": "Gestor Huawei U2020 Core",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 72,
+        "label": "NECTACT",
+        "name": "NectAct",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 75,
+        "label": "CORE_HUAWEI_U2020",
+        "name": "Core Huawei u2020",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 61,
+        "label": "GESTOR_ASA",
+        "name": "GESTOR ASA",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 74,
+        "label": "NE8000-M14",
+        "name": "NE8000-M14 ",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 56,
+        "label": "OSS_NSN",
+        "name": "OSS NSN",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 57,
+        "label": "CGNAT",
+        "name": "CGNAT",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 63,
+        "label": "DELL",
+        "name": "DELL",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 69,
+        "label": "INFOBLOX_DNS",
+        "name": "INFOBLOX DNS",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 1,
+        "label": "ECP",
+        "name": "ECP",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 2,
+        "label": "SWITCHMATE",
+        "name": "SwitchMATE",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 3,
+        "label": "OMC",
+        "name": "OMC",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 4,
+        "label": "STP-ITU",
+        "name": "STP-ITU",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 5,
+        "label": "ANS",
+        "name": "ANS",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 6,
+        "label": "AXE",
+        "name": "AXE",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 7,
+        "label": "NCC",
+        "name": "NCC",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 8,
+        "label": "OPEN_VIEW",
+        "name": "Open View",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 9,
+        "label": "5ESS",
+        "name": "5ESS",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 10,
+        "label": "STP-ANSI",
+        "name": "STP-ANSI",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 11,
+        "label": "HLR",
+        "name": "HLR",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 12,
+        "label": "IS-41",
+        "name": "IS-41",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 13,
+        "label": "SMS",
+        "name": "SMS",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 14,
+        "label": "T-LINK_EXTENDERS",
+        "name": "T-Link Extenders",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 15,
+        "label": "MANAGER_TT",
+        "name": "Manager TT",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 16,
+        "label": "GESTOR_ENM",
+        "name": "Gestor ENM",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 17,
+        "label": "GESTOR_ALCATEL",
+        "name": "Gestor Alcatel",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 18,
+        "label": "HIQ",
+        "name": "HiQ",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 19,
+        "label": "STP_TEKELEC_ANSI",
+        "name": "STP Tekelec ANSI",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 20,
+        "label": "GESTOR_5620",
+        "name": "Gestor 5620",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 21,
+        "label": "FTP_SERVER",
+        "name": "FTP Server",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 22,
+        "label": "ODBC",
+        "name": "ODBC",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 23,
+        "label": "MAR",
+        "name": "MAR",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 24,
+        "label": "GESTOR_HARRIS",
+        "name": "Gestor Harris",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 25,
+        "label": "AAA_3G",
+        "name": "AAA 3G",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 26,
+        "label": "GESTOR_NEW_NMS",
+        "name": "Gestor New Nms",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 28,
+        "label": "GESTOR_NETX",
+        "name": "Gestor Netx",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 29,
+        "label": "SISTEMA_OPERATIVO_WINDOWS",
+        "name": "Sistema Operativo Windows",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 30,
+        "label": "ANYPATH",
+        "name": "Anypath",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 31,
+        "label": "CENTIGRAM",
+        "name": "Centigram",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 32,
+        "label": "GSM_OSS",
+        "name": "GSM OSS",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 33,
+        "label": "EQUIPAMIENTO_DE_ESTACION",
+        "name": "Equipamiento de Estacion",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 34,
+        "label": "DYNAMIC_ROUTING",
+        "name": "Dynamic Routing",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 35,
+        "label": "GESTOR_HUAWEI_T2000",
+        "name": "Gestor Huawei T2000",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 36,
+        "label": "CMS",
+        "name": "CMS",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 37,
+        "label": "OMP",
+        "name": "OMP",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 38,
+        "label": "PLEXUS",
+        "name": "Plexus",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 40,
+        "label": "GESTOR_ERICSSON",
+        "name": "Gestor Ericsson",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 41,
+        "label": "GESTOR_NERA",
+        "name": "Gestor Nera",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 42,
+        "label": "GESTOR_ALU",
+        "name": "Gestor ALU",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 43,
+        "label": "GESTOR_ECI",
+        "name": "Gestor ECI",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 44,
+        "label": "GESTOR_ONMS",
+        "name": "Gestor ONMS",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 45,
+        "label": "GESTOR",
+        "name": "Gestor",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 46,
+        "label": "MISMO_EQUIPO",
+        "name": "Mismo Equipo",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 47,
+        "label": "NO_APLICA",
+        "name": "NO APLICA",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 48,
+        "label": "OTRO_CARRIER",
+        "name": "OTRO CARRIER",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 49,
+        "label": "PLATAFORMA_DE_MUX",
+        "name": "PLATAFORMA DE MUX",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 50,
+        "label": "CONEXION_FISICA",
+        "name": "CONEXION FISICA",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 51,
+        "label": "M2000",
+        "name": "M2000",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 39,
+        "label": "CORE_IP",
+        "name": "CORE IP",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 52,
+        "label": "THOMPSON_XMS",
+        "name": "THOMPSON XMS",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 55,
+        "label": "ZTE",
+        "name": "ZTE",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 59,
+        "label": "HUAWEI_NGIN",
+        "name": "Huawei NGIN",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 60,
+        "label": "ASCADE",
+        "name": "ASCADE",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 70,
+        "label": "CHECKPOINT",
+        "name": "Checkpoint",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 62,
+        "label": "CISCO",
+        "name": "CISCO",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 73,
+        "label": "GESTOR_SIAE",
+        "name": "Gestor SIAE",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 54,
+        "label": "GESTOR_HUAWEI_U2000",
+        "name": "Gestor Huawei U2000",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 67,
+        "label": "JUNIPER",
+        "name": "Juniper",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      },
+      {
+        "id": 68,
+        "label": "GESTOR_U2000_HUAWEI_LTE",
+        "name": "Gestor U2000 Huawei LTE",
+        "status": 1,
+        "createdBy": "ROOT",
+        "updatedBy": "ROOT",
+        "createdAt": "2025-09-16T00:00:00",
+        "updatedAt": "2025-09-16T00:00:00"
+      }
+    ],
+    "total": 74,
+    "page": 1,
+    "limit": 1000,
+    "hasNext": false,
+    "hasPrev": false,
+    "next": 1,
+    "prev": 1,
+    "pages": 1,
+    "last": 1,
+    "first": 1
+  },
+  "timestamp": 1762136204162
+}
+ 
+22:16:44.506 [main] INFO  com.intuit.karate - [print] === TIEMPO DE RESPUESTA DEL FEATURE === 1.092 s 
+22:16:44.513 [main] INFO  com.intuit.karate - [print] ID obtenido del feature obtenerTypeSources: 53 
+22:16:44.531 [main] DEBUG com.intuit.karate - request:
+1 > GET https://portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/api/v1/portal/ref-type-sources/53
+1 > Content-Type: application/json
+1 > X-CORRELATION-ID: 1445|E11011|234234
+1 > X-TOKEN-ID: eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjlGN0IwNUY1Nzk1Qzc5RjNDMDcwMjVDRDgzOTUxMkUxIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2MjAxLCJleHAiOjE3NjIxMzk4MDF9.5As-vF3T99ZGsmd_KCiDhVXTSTPNWl2maHlhgJEaudklPETjEXXGEA0MqdHD9HMi
+1 > Host: portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:16:45.094 [main] DEBUG com.intuit.karate - response time in milliseconds: 559
+1 < 200
+1 < content-length: 205
+1 < content-type: application/json;charset=UTF-8
+1 < set-cookie: e04ac28d5e084ee6fdbd7bc1d4092a06=ea10ecf8d95bb6244abca4c8193e7f38; path=/; HttpOnly
+1 < Set-Cookie: e04ac28d5e084ee6fdbd7bc1d4092a06=ea10ecf8d95bb6244abca4c8193e7f38; path=/; HttpOnly
+{"success":true,"data":{"id":53,"label":"SART","name":"SART","status":1,"createdBy":"ROOT","updatedBy":"ROOT","createdAt":"2025-09-16T00:00:00","updatedAt":"2025-09-16T00:00:00"},"timestamp":1762136205054}
+
+22:16:45.108 [main] INFO  com.intuit.karate - [print] Type Source obtenido exitosamente: {
+  "id": 53,
+  "label": "SART",
+  "name": "SART",
+  "status": 1,
+  "createdBy": "ROOT",
+  "updatedBy": "ROOT",
+  "createdAt": "2025-09-16T00:00:00",
+  "updatedAt": "2025-09-16T00:00:00"
+}
+ 
+22:16:45.110 [main] INFO  com.intuit.karate - [print] === TIEMPO DE RESPUESTA === 0.559 s 
+22:16:46.677 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 6 (1 remaining) classpath:api/obtenerTypeSourcePorId.feature
+22:17:25.043 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:17:25.058 [main] WARN  com.intuit.karate.Suite - failed to backup existing dir: target
+22:17:25.071 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+22:17:27.388 [main] DEBUG com.intuit.karate - request:
+1 > POST https://ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/intraLogin
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"login":"tns01","clave":"T3st2024.+-"}
+
+22:17:28.219 [main] DEBUG com.intuit.karate - response time in milliseconds: 828
+1 < 200
+1 < content-type: application/json
+1 < content-length: 326
+1 < set-cookie: c4e2248e6317d37faa062fd3ce9304d4=fd39bf078e5818d81837c480f471c390; path=/; HttpOnly
+1 < Set-Cookie: c4e2248e6317d37faa062fd3ce9304d4=fd39bf078e5818d81837c480f471c390; path=/; HttpOnly
+{"token":"eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjQ2NTRDMDhBMDdDMDg5RDE4NjhENTVBQjFCRjc2RjY5Iiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2MjQ3LCJleHAiOjE3NjIxMzk4NDd9.J4TRfdT8JEw3BBI6_FGq4SKt9_qvdyKa8zufKTUebAc0uW8voc10SqDKL6Uuznn_"}
+
+22:17:28.663 [main] DEBUG com.intuit.karate - request:
+1 > POST https://portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/api/v1/portal/ref-type-sources
+1 > Content-Type: application/json; charset=UTF-8
+1 > X-CORRELATION-ID: 1445|E11011|234234
+1 > X-TOKEN-ID: eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjQ2NTRDMDhBMDdDMDg5RDE4NjhENTVBQjFCRjc2RjY5Iiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2MjQ3LCJleHAiOjE3NjIxMzk4NDd9.J4TRfdT8JEw3BBI6_FGq4SKt9_qvdyKa8zufKTUebAc0uW8voc10SqDKL6Uuznn_
+1 > Content-Length: 83
+1 > Host: portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"label":"TypeSource Test Karate","name":"Type Source Automatizado KRT","status":1}
+
+22:17:30.088 [main] DEBUG com.intuit.karate - response time in milliseconds: 1424
+1 < 200
+1 < content-length: 278
+1 < content-type: application/json;charset=UTF-8
+1 < set-cookie: e04ac28d5e084ee6fdbd7bc1d4092a06=e6679c634420882e35307b805c67c783; path=/; HttpOnly
+1 < Set-Cookie: e04ac28d5e084ee6fdbd7bc1d4092a06=e6679c634420882e35307b805c67c783; path=/; HttpOnly
+{"success":true,"data":{"id":451,"label":"TypeSource Test Karate","name":"Type Source Automatizado KRT","status":1,"createdBy":"X-USER-ID","updatedBy":"X-USER-ID","createdAt":"2025-11-03T02:17:29.743826935","updatedAt":"2025-11-03T02:17:29.743841127"},"timestamp":1762136250055}
+
+22:17:30.105 [main] INFO  com.intuit.karate - [print] Type Source creado con ID: 451 
+22:17:30.107 [main] INFO  com.intuit.karate - [print] {
+  "success": true,
+  "data": {
+    "id": 451,
+    "label": "TypeSource Test Karate",
+    "name": "Type Source Automatizado KRT",
+    "status": 1,
+    "createdBy": "X-USER-ID",
+    "updatedBy": "X-USER-ID",
+    "createdAt": "2025-11-03T02:17:29.743826935",
+    "updatedAt": "2025-11-03T02:17:29.743841127"
+  },
+  "timestamp": 1762136250055
+}
+ 
+22:17:30.115 [main] INFO  com.intuit.karate - [print] === TIEMPO DE RESPUESTA === 1.424 s 
+22:17:31.104 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 6 (4 remaining) classpath:api/crearTypeSource.feature
+22:18:15.498 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:18:15.512 [main] WARN  com.intuit.karate.Suite - failed to backup existing dir: target
+22:18:15.515 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+22:18:17.797 [main] DEBUG com.intuit.karate - request:
+1 > POST https://ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/intraLogin
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"login":"tns01","clave":"T3st2024.+-"}
+
+22:18:18.615 [main] DEBUG com.intuit.karate - response time in milliseconds: 818
+1 < 200
+1 < content-type: application/json
+1 < content-length: 326
+1 < set-cookie: c4e2248e6317d37faa062fd3ce9304d4=111be4bf5b2ba37de32b640f6ee05093; path=/; HttpOnly
+1 < Set-Cookie: c4e2248e6317d37faa062fd3ce9304d4=111be4bf5b2ba37de32b640f6ee05093; path=/; HttpOnly
+{"token":"eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjU3NjIzQTIxRkIxMkE5OTI0OEMyRkM0QkExOEI1RThBIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2Mjk4LCJleHAiOjE3NjIxMzk4OTh9.gZHMX8x4K7T0LoRImglvJ47S73V6aNypnKEzjypK_DHuswCW4GaqlSL_odvC-iAa"}
+
+22:18:19.002 [main] ERROR com.intuit.karate - classpath:api/actualizarTypeSource.feature:19
+* def typeSourceId = crearResponse.response.data.id
+js failed:
+>>>>
+01: crearResponse.response.data.id
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: Cannot read property "data" from undefined
+- <js>.:program(Unnamed:1)
+
+classpath:api/actualizarTypeSource.feature:19
+22:18:20.252 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 6 (5 remaining) classpath:api/actualizarTypeSource.feature
+22:19:27.807 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:19:27.824 [main] WARN  com.intuit.karate.Suite - failed to backup existing dir: target
+22:19:27.845 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+22:19:30.243 [main] DEBUG com.intuit.karate - request:
+1 > POST https://ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/intraLogin
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"login":"tns01","clave":"T3st2024.+-"}
+
+22:19:31.106 [main] DEBUG com.intuit.karate - response time in milliseconds: 855
+1 < 200
+1 < content-type: application/json
+1 < content-length: 326
+1 < set-cookie: c4e2248e6317d37faa062fd3ce9304d4=fd39bf078e5818d81837c480f471c390; path=/; HttpOnly
+1 < Set-Cookie: c4e2248e6317d37faa062fd3ce9304d4=fd39bf078e5818d81837c480f471c390; path=/; HttpOnly
+{"token":"eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IkExMEUwMDJDNkNEMUFGQjJCQTlDMEE3RUNDM0I4QUE3Iiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2MzcwLCJleHAiOjE3NjIxMzk5NzB9.m51LYmSp_HoNmlpoz_EEKPXR5U_qWAdldjf3YzmLn-fX6nw-JnmJzM-TPyb899pG"}
+
+22:19:31.736 [main] ERROR com.intuit.karate - classpath:api/actualizarTypeSource.feature:19
+* def typeSourceId = crearResponse.response.data.data.id
+js failed:
+>>>>
+01: crearResponse.response.data.data.id
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: Cannot read property "data" from undefined
+- <js>.:program(Unnamed:1)
+
+classpath:api/actualizarTypeSource.feature:19
+22:19:33.131 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 6 (5 remaining) classpath:api/actualizarTypeSource.feature
+22:20:53.452 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:20:53.470 [main] WARN  com.intuit.karate.Suite - failed to backup existing dir: target
+22:20:53.484 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+22:20:55.875 [main] DEBUG com.intuit.karate - request:
+1 > POST https://ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/intraLogin
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"login":"tns01","clave":"T3st2024.+-"}
+
+22:20:56.768 [main] DEBUG com.intuit.karate - response time in milliseconds: 889
+1 < 200
+1 < content-type: application/json
+1 < content-length: 326
+1 < set-cookie: c4e2248e6317d37faa062fd3ce9304d4=111be4bf5b2ba37de32b640f6ee05093; path=/; HttpOnly
+1 < Set-Cookie: c4e2248e6317d37faa062fd3ce9304d4=111be4bf5b2ba37de32b640f6ee05093; path=/; HttpOnly
+{"token":"eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IkUxMjA4MDk4QTY1MDQwRUI4QkVENzMxQTg5Q0Q2N0Y5Iiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2NDU2LCJleHAiOjE3NjIxNDAwNTZ9.mG0YunOlfofkWvqfWG8rdCbw6AVrSGGBfgiPHSBfV_oTAkkcXwG2vA0sM_lAUMyv"}
+
+22:20:57.360 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:api/crearTypeSource.feature - call by tag at line 15: @crearTypeSources
+22:20:57.397 [main] DEBUG com.intuit.karate - request:
+1 > POST https://ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/intraLogin
+1 > Content-Type: application/json; charset=UTF-8
+1 > X-CORRELATION-ID: 1445|E11011|234234
+1 > X-TOKEN-ID: eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IkUxMjA4MDk4QTY1MDQwRUI4QkVENzMxQTg5Q0Q2N0Y5Iiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2NDU2LCJleHAiOjE3NjIxNDAwNTZ9.mG0YunOlfofkWvqfWG8rdCbw6AVrSGGBfgiPHSBfV_oTAkkcXwG2vA0sM_lAUMyv
+1 > Content-Length: 39
+1 > Host: ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"login":"tns01","clave":"T3st2024.+-"}
+
+22:20:58.076 [main] DEBUG com.intuit.karate - response time in milliseconds: 678
+1 < 200
+1 < content-type: application/json
+1 < content-length: 326
+1 < set-cookie: c4e2248e6317d37faa062fd3ce9304d4=fd39bf078e5818d81837c480f471c390; path=/; HttpOnly
+1 < Set-Cookie: c4e2248e6317d37faa062fd3ce9304d4=fd39bf078e5818d81837c480f471c390; path=/; HttpOnly
+{"token":"eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjAyMDlBNTE2MEE3QkUzMUYzQTM4RURBMjVCMTM5Q0E3Iiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2NDU3LCJleHAiOjE3NjIxNDAwNTd9.Xqvmi8ZJduE2lqyxkR9jTD_j-EGS5VkXZ0WRxOh0f4YVX2HK_yefq66y3A71dMgy"}
+
+22:20:58.099 [main] DEBUG com.intuit.karate - request:
+1 > POST https://portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/api/v1/portal/ref-type-sources
+1 > Content-Type: application/json; charset=UTF-8
+1 > X-CORRELATION-ID: 1445|E11011|234234
+1 > X-TOKEN-ID: eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjAyMDlBNTE2MEE3QkUzMUYzQTM4RURBMjVCMTM5Q0E3Iiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2NDU3LCJleHAiOjE3NjIxNDAwNTd9.Xqvmi8ZJduE2lqyxkR9jTD_j-EGS5VkXZ0WRxOh0f4YVX2HK_yefq66y3A71dMgy
+1 > Content-Length: 83
+1 > Host: portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"label":"TypeSource Test Karate","name":"Type Source Automatizado KRT","status":1}
+
+22:20:59.457 [main] DEBUG com.intuit.karate - response time in milliseconds: 1358
+1 < 400
+1 < content-length: 827
+1 < content-type: application/json
+1 < set-cookie: e04ac28d5e084ee6fdbd7bc1d4092a06=ea10ecf8d95bb6244abca4c8193e7f38; path=/; HttpOnly
+1 < Set-Cookie: e04ac28d5e084ee6fdbd7bc1d4092a06=ea10ecf8d95bb6244abca4c8193e7f38; path=/; HttpOnly
+{"success":false,"data":{"code":"400","status":"BAD_REQUEST","message":"UNKNOWN: org.hibernate.exception.ConstraintViolationException - error executing SQL statement [ERROR: duplicate key value violates unique constraint \"ref_tipo_fuentes_etiqueta_unq\" (23505)] [insert into ref_tipo_fuentes (fecha_creacion,usuario_creacion,etiqueta,nombre,estatus,fecha_modificacion,usuario_modificacion,id) values ($1,$2,$3,$4,$5,$6,$7,$8)]","errors":["UNKNOWN: org.hibernate.exception.ConstraintViolationException - error executing SQL statement [ERROR: duplicate key value violates unique constraint \"ref_tipo_fuentes_etiqueta_unq\" (23505)] [insert into ref_tipo_fuentes (fecha_creacion,usuario_creacion,etiqueta,nombre,estatus,fecha_modificacion,usuario_modificacion,id) values ($1,$2,$3,$4,$5,$6,$7,$8)]"]},"timestamp":1762136459402}
+
+22:20:59.461 [main] ERROR com.intuit.karate - classpath:api/crearTypeSource.feature:19
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 1358, url: https://portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/api/v1/portal/ref-type-sources, response: 
+{"success":false,"data":{"code":"400","status":"BAD_REQUEST","message":"UNKNOWN: org.hibernate.exception.ConstraintViolationException - error executing SQL statement [ERROR: duplicate key value violates unique constraint \"ref_tipo_fuentes_etiqueta_unq\" (23505)] [insert into ref_tipo_fuentes (fecha_creacion,usuario_creacion,etiqueta,nombre,estatus,fecha_modificacion,usuario_modificacion,id) values ($1,$2,$3,$4,$5,$6,$7,$8)]","errors":["UNKNOWN: org.hibernate.exception.ConstraintViolationException - error executing SQL statement [ERROR: duplicate key value violates unique constraint \"ref_tipo_fuentes_etiqueta_unq\" (23505)] [insert into ref_tipo_fuentes (fecha_creacion,usuario_creacion,etiqueta,nombre,estatus,fecha_modificacion,usuario_modificacion,id) values ($1,$2,$3,$4,$5,$6,$7,$8)]"]},"timestamp":1762136459402}
+classpath:api/crearTypeSource.feature:19
+22:20:59.468 [main] ERROR com.intuit.karate - classpath:api/actualizarTypeSource.feature:18
+* def crearResponse = call read('classpath:api/crearTypeSource.feature@@crearTypeSources')
+status code was: 400, expected: 200, response time in milliseconds: 1358, url: https://portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/api/v1/portal/ref-type-sources, response: 
+{"success":false,"data":{"code":"400","status":"BAD_REQUEST","message":"UNKNOWN: org.hibernate.exception.ConstraintViolationException - error executing SQL statement [ERROR: duplicate key value violates unique constraint \"ref_tipo_fuentes_etiqueta_unq\" (23505)] [insert into ref_tipo_fuentes (fecha_creacion,usuario_creacion,etiqueta,nombre,estatus,fecha_modificacion,usuario_modificacion,id) values ($1,$2,$3,$4,$5,$6,$7,$8)]","errors":["UNKNOWN: org.hibernate.exception.ConstraintViolationException - error executing SQL statement [ERROR: duplicate key value violates unique constraint \"ref_tipo_fuentes_etiqueta_unq\" (23505)] [insert into ref_tipo_fuentes (fecha_creacion,usuario_creacion,etiqueta,nombre,estatus,fecha_modificacion,usuario_modificacion,id) values ($1,$2,$3,$4,$5,$6,$7,$8)]"]},"timestamp":1762136459402}
+classpath:api/crearTypeSource.feature:19
+classpath:api/actualizarTypeSource.feature:18
+22:21:00.536 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 6 (5 remaining) classpath:api/actualizarTypeSource.feature
+22:21:25.157 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:21:25.181 [main] WARN  com.intuit.karate.Suite - failed to backup existing dir: target
+22:21:25.196 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+22:21:28.082 [main] DEBUG com.intuit.karate - request:
+1 > POST https://ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/intraLogin
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"login":"tns01","clave":"T3st2024.+-"}
+
+22:21:28.927 [main] DEBUG com.intuit.karate - response time in milliseconds: 842
+1 < 200
+1 < content-type: application/json
+1 < content-length: 326
+1 < set-cookie: c4e2248e6317d37faa062fd3ce9304d4=111be4bf5b2ba37de32b640f6ee05093; path=/; HttpOnly
+1 < Set-Cookie: c4e2248e6317d37faa062fd3ce9304d4=111be4bf5b2ba37de32b640f6ee05093; path=/; HttpOnly
+{"token":"eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjlEODFBODk3QUQyNEQ1N0E0NEQyRjA5RENCOTlFQTVFIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2NDg4LCJleHAiOjE3NjIxNDAwODh9.Jz3nhU7sXWYMad-5e55fIUdfn5mwOSMHnuM58kwtSdFzllYaTb-zQoNBtRxYTPF9"}
+
+22:21:29.427 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:api/crearTypeSource.feature - call by tag at line 15: crearTypeSources
+22:21:29.457 [main] DEBUG com.intuit.karate - request:
+1 > POST https://ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/intraLogin
+1 > Content-Type: application/json; charset=UTF-8
+1 > X-CORRELATION-ID: 1445|E11011|234234
+1 > X-TOKEN-ID: eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjlEODFBODk3QUQyNEQ1N0E0NEQyRjA5RENCOTlFQTVFIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2NDg4LCJleHAiOjE3NjIxNDAwODh9.Jz3nhU7sXWYMad-5e55fIUdfn5mwOSMHnuM58kwtSdFzllYaTb-zQoNBtRxYTPF9
+1 > Content-Length: 39
+1 > Host: ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"login":"tns01","clave":"T3st2024.+-"}
+
+22:21:30.143 [main] DEBUG com.intuit.karate - response time in milliseconds: 683
+1 < 200
+1 < content-type: application/json
+1 < content-length: 326
+1 < set-cookie: c4e2248e6317d37faa062fd3ce9304d4=fd39bf078e5818d81837c480f471c390; path=/; HttpOnly
+1 < Set-Cookie: c4e2248e6317d37faa062fd3ce9304d4=fd39bf078e5818d81837c480f471c390; path=/; HttpOnly
+{"token":"eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjYyRjJBRkY3NzY2NzdEMjRBRUFCQUY4OUJGNUQ0RDVCIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2NDg5LCJleHAiOjE3NjIxNDAwODl9.p6FhymrUf1OVz2Qy6eyQyp_yP7HI08D9_RiIY9v9RDEM4MRL4INtjy2HiusOcHke"}
+
+22:21:30.162 [main] DEBUG com.intuit.karate - request:
+1 > POST https://portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/api/v1/portal/ref-type-sources
+1 > Content-Type: application/json; charset=UTF-8
+1 > X-CORRELATION-ID: 1445|E11011|234234
+1 > X-TOKEN-ID: eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjYyRjJBRkY3NzY2NzdEMjRBRUFCQUY4OUJGNUQ0RDVCIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2NDg5LCJleHAiOjE3NjIxNDAwODl9.p6FhymrUf1OVz2Qy6eyQyp_yP7HI08D9_RiIY9v9RDEM4MRL4INtjy2HiusOcHke
+1 > Content-Length: 83
+1 > Host: portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"label":"TypeSource Test Karate","name":"Type Source Automatizado KRT","status":1}
+
+22:21:31.256 [main] DEBUG com.intuit.karate - response time in milliseconds: 1094
+1 < 400
+1 < content-length: 827
+1 < content-type: application/json
+1 < set-cookie: e04ac28d5e084ee6fdbd7bc1d4092a06=ea10ecf8d95bb6244abca4c8193e7f38; path=/; HttpOnly
+1 < Set-Cookie: e04ac28d5e084ee6fdbd7bc1d4092a06=ea10ecf8d95bb6244abca4c8193e7f38; path=/; HttpOnly
+{"success":false,"data":{"code":"400","status":"BAD_REQUEST","message":"UNKNOWN: org.hibernate.exception.ConstraintViolationException - error executing SQL statement [ERROR: duplicate key value violates unique constraint \"ref_tipo_fuentes_etiqueta_unq\" (23505)] [insert into ref_tipo_fuentes (fecha_creacion,usuario_creacion,etiqueta,nombre,estatus,fecha_modificacion,usuario_modificacion,id) values ($1,$2,$3,$4,$5,$6,$7,$8)]","errors":["UNKNOWN: org.hibernate.exception.ConstraintViolationException - error executing SQL statement [ERROR: duplicate key value violates unique constraint \"ref_tipo_fuentes_etiqueta_unq\" (23505)] [insert into ref_tipo_fuentes (fecha_creacion,usuario_creacion,etiqueta,nombre,estatus,fecha_modificacion,usuario_modificacion,id) values ($1,$2,$3,$4,$5,$6,$7,$8)]"]},"timestamp":1762136491219}
+
+22:21:31.274 [main] ERROR com.intuit.karate - classpath:api/crearTypeSource.feature:19
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 1094, url: https://portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/api/v1/portal/ref-type-sources, response: 
+{"success":false,"data":{"code":"400","status":"BAD_REQUEST","message":"UNKNOWN: org.hibernate.exception.ConstraintViolationException - error executing SQL statement [ERROR: duplicate key value violates unique constraint \"ref_tipo_fuentes_etiqueta_unq\" (23505)] [insert into ref_tipo_fuentes (fecha_creacion,usuario_creacion,etiqueta,nombre,estatus,fecha_modificacion,usuario_modificacion,id) values ($1,$2,$3,$4,$5,$6,$7,$8)]","errors":["UNKNOWN: org.hibernate.exception.ConstraintViolationException - error executing SQL statement [ERROR: duplicate key value violates unique constraint \"ref_tipo_fuentes_etiqueta_unq\" (23505)] [insert into ref_tipo_fuentes (fecha_creacion,usuario_creacion,etiqueta,nombre,estatus,fecha_modificacion,usuario_modificacion,id) values ($1,$2,$3,$4,$5,$6,$7,$8)]"]},"timestamp":1762136491219}
+classpath:api/crearTypeSource.feature:19
+22:21:31.279 [main] ERROR com.intuit.karate - classpath:api/actualizarTypeSource.feature:18
+* def crearResponse = call read('classpath:api/crearTypeSource.feature@crearTypeSources')
+status code was: 400, expected: 200, response time in milliseconds: 1094, url: https://portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/api/v1/portal/ref-type-sources, response: 
+{"success":false,"data":{"code":"400","status":"BAD_REQUEST","message":"UNKNOWN: org.hibernate.exception.ConstraintViolationException - error executing SQL statement [ERROR: duplicate key value violates unique constraint \"ref_tipo_fuentes_etiqueta_unq\" (23505)] [insert into ref_tipo_fuentes (fecha_creacion,usuario_creacion,etiqueta,nombre,estatus,fecha_modificacion,usuario_modificacion,id) values ($1,$2,$3,$4,$5,$6,$7,$8)]","errors":["UNKNOWN: org.hibernate.exception.ConstraintViolationException - error executing SQL statement [ERROR: duplicate key value violates unique constraint \"ref_tipo_fuentes_etiqueta_unq\" (23505)] [insert into ref_tipo_fuentes (fecha_creacion,usuario_creacion,etiqueta,nombre,estatus,fecha_modificacion,usuario_modificacion,id) values ($1,$2,$3,$4,$5,$6,$7,$8)]"]},"timestamp":1762136491219}
+classpath:api/crearTypeSource.feature:19
+classpath:api/actualizarTypeSource.feature:18
+22:21:32.480 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 6 (5 remaining) classpath:api/actualizarTypeSource.feature
+22:23:14.659 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:23:14.675 [main] WARN  com.intuit.karate.Suite - failed to backup existing dir: target
+22:23:14.698 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+22:23:17.047 [main] DEBUG com.intuit.karate - request:
+1 > POST https://ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/intraLogin
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"login":"tns01","clave":"T3st2024.+-"}
+
+22:23:17.863 [main] DEBUG com.intuit.karate - response time in milliseconds: 808
+1 < 200
+1 < content-type: application/json
+1 < content-length: 326
+1 < set-cookie: c4e2248e6317d37faa062fd3ce9304d4=fd39bf078e5818d81837c480f471c390; path=/; HttpOnly
+1 < Set-Cookie: c4e2248e6317d37faa062fd3ce9304d4=fd39bf078e5818d81837c480f471c390; path=/; HttpOnly
+{"token":"eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IkQ1RkY1M0MzNDhFRUIxQ0EwNTRBOTI5NzFENDJBQTVEIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2NTk3LCJleHAiOjE3NjIxNDAxOTd9.2FG3IOCYZ-yw_bxDyW7XOQCcggE7FCjeLfTZM748l5l_dMs-uMKEgMSwGvg2kFHn"}
+
+22:23:18.411 [main] DEBUG com.intuit.karate - request:
+1 > POST https://portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/api/v1/portal/ref-type-sources
+1 > Content-Type: application/json; charset=UTF-8
+1 > X-CORRELATION-ID: 1445|E11011|234234
+1 > X-TOKEN-ID: eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IkQ1RkY1M0MzNDhFRUIxQ0EwNTRBOTI5NzFENDJBQTVEIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2NTk3LCJleHAiOjE3NjIxNDAxOTd9.2FG3IOCYZ-yw_bxDyW7XOQCcggE7FCjeLfTZM748l5l_dMs-uMKEgMSwGvg2kFHn
+1 > Content-Length: 92
+1 > Host: portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"label":"TypeSource Karate 1762136598392","name":"Type Source Automatizado KRT","status":1}
+
+22:23:19.909 [main] DEBUG com.intuit.karate - response time in milliseconds: 1498
+1 < 400
+1 < content-length: 823
+1 < content-type: application/json
+1 < set-cookie: e04ac28d5e084ee6fdbd7bc1d4092a06=ea10ecf8d95bb6244abca4c8193e7f38; path=/; HttpOnly
+1 < Set-Cookie: e04ac28d5e084ee6fdbd7bc1d4092a06=ea10ecf8d95bb6244abca4c8193e7f38; path=/; HttpOnly
+{"success":false,"data":{"code":"400","status":"BAD_REQUEST","message":"UNKNOWN: org.hibernate.exception.ConstraintViolationException - error executing SQL statement [ERROR: duplicate key value violates unique constraint \"ref_tipo_fuentes_nombre_unq\" (23505)] [insert into ref_tipo_fuentes (fecha_creacion,usuario_creacion,etiqueta,nombre,estatus,fecha_modificacion,usuario_modificacion,id) values ($1,$2,$3,$4,$5,$6,$7,$8)]","errors":["UNKNOWN: org.hibernate.exception.ConstraintViolationException - error executing SQL statement [ERROR: duplicate key value violates unique constraint \"ref_tipo_fuentes_nombre_unq\" (23505)] [insert into ref_tipo_fuentes (fecha_creacion,usuario_creacion,etiqueta,nombre,estatus,fecha_modificacion,usuario_modificacion,id) values ($1,$2,$3,$4,$5,$6,$7,$8)]"]},"timestamp":1762136599736}
+
+22:23:19.917 [main] ERROR com.intuit.karate - classpath:api/actualizarTypeSource.feature:24
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 1498, url: https://portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/api/v1/portal/ref-type-sources, response: 
+{"success":false,"data":{"code":"400","status":"BAD_REQUEST","message":"UNKNOWN: org.hibernate.exception.ConstraintViolationException - error executing SQL statement [ERROR: duplicate key value violates unique constraint \"ref_tipo_fuentes_nombre_unq\" (23505)] [insert into ref_tipo_fuentes (fecha_creacion,usuario_creacion,etiqueta,nombre,estatus,fecha_modificacion,usuario_modificacion,id) values ($1,$2,$3,$4,$5,$6,$7,$8)]","errors":["UNKNOWN: org.hibernate.exception.ConstraintViolationException - error executing SQL statement [ERROR: duplicate key value violates unique constraint \"ref_tipo_fuentes_nombre_unq\" (23505)] [insert into ref_tipo_fuentes (fecha_creacion,usuario_creacion,etiqueta,nombre,estatus,fecha_modificacion,usuario_modificacion,id) values ($1,$2,$3,$4,$5,$6,$7,$8)]"]},"timestamp":1762136599736}
+classpath:api/actualizarTypeSource.feature:24
+22:23:20.865 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 6 (5 remaining) classpath:api/actualizarTypeSource.feature
+22:24:53.225 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:24:53.241 [main] WARN  com.intuit.karate.Suite - failed to backup existing dir: target
+22:24:53.255 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+22:25:27.378 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:25:27.393 [main] WARN  com.intuit.karate.Suite - failed to backup existing dir: target
+22:25:27.409 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+22:25:30.145 [main] DEBUG com.intuit.karate - request:
+1 > POST https://ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/intraLogin
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"login":"tns01","clave":"T3st2024.+-"}
+
+22:25:31.257 [main] DEBUG com.intuit.karate - response time in milliseconds: 1104
+1 < 200
+1 < content-type: application/json
+1 < content-length: 326
+1 < set-cookie: c4e2248e6317d37faa062fd3ce9304d4=111be4bf5b2ba37de32b640f6ee05093; path=/; HttpOnly
+1 < Set-Cookie: c4e2248e6317d37faa062fd3ce9304d4=111be4bf5b2ba37de32b640f6ee05093; path=/; HttpOnly
+{"token":"eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjJCQjMzNDAyQzAyNjNDODUzM0Y5NjA2QzQxMjU4QTlCIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2NzMxLCJleHAiOjE3NjIxNDAzMzF9.MkWHjqmMRSx7Mgr98YeU3RWkzxkfW6KkEJLcyO-Olv72-YhUpM-JFCs9Tc74N4ZL"}
+
+22:25:31.880 [main] DEBUG com.intuit.karate - request:
+1 > POST https://portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/api/v1/portal/ref-type-sources
+1 > Content-Type: application/json; charset=UTF-8
+1 > X-CORRELATION-ID: 1445|E11011|234234
+1 > X-TOKEN-ID: eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjJCQjMzNDAyQzAyNjNDODUzM0Y5NjA2QzQxMjU4QTlCIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2NzMxLCJleHAiOjE3NjIxNDAzMzF9.MkWHjqmMRSx7Mgr98YeU3RWkzxkfW6KkEJLcyO-Olv72-YhUpM-JFCs9Tc74N4ZL
+1 > Content-Length: 111
+1 > Host: portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"label":"TypeSource Test Karate 1762136731839","name":"Type Source Automatizado KRT 1762136731839","status":1}
+
+22:25:32.946 [main] DEBUG com.intuit.karate - response time in milliseconds: 1065
+1 < 200
+1 < content-length: 306
+1 < content-type: application/json;charset=UTF-8
+1 < set-cookie: e04ac28d5e084ee6fdbd7bc1d4092a06=ea10ecf8d95bb6244abca4c8193e7f38; path=/; HttpOnly
+1 < Set-Cookie: e04ac28d5e084ee6fdbd7bc1d4092a06=ea10ecf8d95bb6244abca4c8193e7f38; path=/; HttpOnly
+{"success":true,"data":{"id":455,"label":"TypeSource Test Karate 1762136731839","name":"Type Source Automatizado KRT 1762136731839","status":1,"createdBy":"X-USER-ID","updatedBy":"X-USER-ID","createdAt":"2025-11-03T02:25:32.646465107","updatedAt":"2025-11-03T02:25:32.646472542"},"timestamp":1762136732910}
+
+22:25:32.955 [main] INFO  com.intuit.karate - [print] Type Source creado con ID: 455 
+22:25:32.972 [main] DEBUG com.intuit.karate - request:
+2 > PUT https://portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/api/v1/portal/ref-type-sources/455
+2 > Content-Type: application/json; charset=UTF-8
+2 > X-CORRELATION-ID: 1445|E11011|234234
+2 > X-TOKEN-ID: eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjJCQjMzNDAyQzAyNjNDODUzM0Y5NjA2QzQxMjU4QTlCIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2NzMxLCJleHAiOjE3NjIxNDAzMzF9.MkWHjqmMRSx7Mgr98YeU3RWkzxkfW6KkEJLcyO-Olv72-YhUpM-JFCs9Tc74N4ZL
+2 > Cookie: e04ac28d5e084ee6fdbd7bc1d4092a06=ea10ecf8d95bb6244abca4c8193e7f38
+2 > Content-Length: 72
+2 > Host: portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"label":"ACTUALIZADO","name":"Type Source Actualizado Test","status":1}
+
+22:25:34.284 [main] DEBUG com.intuit.karate - response time in milliseconds: 1312
+2 < 200
+2 < content-length: 261
+2 < content-type: application/json;charset=UTF-8
+{"success":true,"data":{"id":455,"label":"ACTUALIZADO","name":"Type Source Actualizado Test","status":1,"createdBy":"X-USER-ID","updatedBy":"X-USER-ID","createdAt":"2025-11-03T02:25:32.646465","updatedAt":"2025-11-03T02:25:32.646472"},"timestamp":1762136734222}
+
+22:25:34.288 [main] INFO  com.intuit.karate - [print] Type Source actualizado exitosamente: {
+  "id": 455,
+  "label": "ACTUALIZADO",
+  "name": "Type Source Actualizado Test",
+  "status": 1,
+  "createdBy": "X-USER-ID",
+  "updatedBy": "X-USER-ID",
+  "createdAt": "2025-11-03T02:25:32.646465",
+  "updatedAt": "2025-11-03T02:25:32.646472"
+}
+ 
+22:25:35.398 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 6 (5 remaining) classpath:api/actualizarTypeSource.feature
+22:26:39.543 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:26:39.558 [main] WARN  com.intuit.karate.Suite - failed to backup existing dir: target
+22:26:39.570 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+22:26:41.981 [main] DEBUG com.intuit.karate - request:
+1 > POST https://ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/intraLogin
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"login":"tns01","clave":"T3st2024.+-"}
+
+22:26:49.824 [main] DEBUG com.intuit.karate - response time in milliseconds: 7839
+1 < 200
+1 < content-type: application/json
+1 < content-length: 326
+1 < set-cookie: c4e2248e6317d37faa062fd3ce9304d4=fd39bf078e5818d81837c480f471c390; path=/; HttpOnly
+1 < Set-Cookie: c4e2248e6317d37faa062fd3ce9304d4=fd39bf078e5818d81837c480f471c390; path=/; HttpOnly
+{"token":"eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjM2OTA4NjVDQTJBMUFCNDYyRTA0RjFEMDZERjIzMTgwIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2ODA5LCJleHAiOjE3NjIxNDA0MDl9.90rJlQzojourk8OKsfxFwRO9nEVCnHdUc87XS0UgRoYtLqbsMkwUxPBQMT-IwpWt"}
+
+22:26:50.288 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:api/crearTypeSource.feature - call by tag at line 15: crearTypeSources
+22:26:50.318 [main] DEBUG com.intuit.karate - request:
+1 > POST https://ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/intraLogin
+1 > Content-Type: application/json; charset=UTF-8
+1 > X-CORRELATION-ID: 1445|E11011|234234
+1 > X-TOKEN-ID: eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjM2OTA4NjVDQTJBMUFCNDYyRTA0RjFEMDZERjIzMTgwIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2ODA5LCJleHAiOjE3NjIxNDA0MDl9.90rJlQzojourk8OKsfxFwRO9nEVCnHdUc87XS0UgRoYtLqbsMkwUxPBQMT-IwpWt
+1 > Content-Length: 39
+1 > Host: ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"login":"tns01","clave":"T3st2024.+-"}
+
+22:26:51.929 [main] DEBUG com.intuit.karate - response time in milliseconds: 1611
+1 < 200
+1 < content-type: application/json
+1 < content-length: 326
+1 < set-cookie: c4e2248e6317d37faa062fd3ce9304d4=fd39bf078e5818d81837c480f471c390; path=/; HttpOnly
+1 < Set-Cookie: c4e2248e6317d37faa062fd3ce9304d4=fd39bf078e5818d81837c480f471c390; path=/; HttpOnly
+{"token":"eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjFENDNEQkMxREIxNzIwMjg3MkM4NkQ5OUVDODUyMDlEIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2ODExLCJleHAiOjE3NjIxNDA0MTF9.VL_pKyc779NEzUzSrBft0cT6EwQFxGtLFYGE1k1DSCxD2fQ8MR9CkRKRLrCMQ-qf"}
+
+22:26:51.943 [main] DEBUG com.intuit.karate - request:
+1 > POST https://portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/api/v1/portal/ref-type-sources
+1 > Content-Type: application/json; charset=UTF-8
+1 > X-CORRELATION-ID: 1445|E11011|234234
+1 > X-TOKEN-ID: eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjFENDNEQkMxREIxNzIwMjg3MkM4NkQ5OUVDODUyMDlEIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2ODExLCJleHAiOjE3NjIxNDA0MTF9.VL_pKyc779NEzUzSrBft0cT6EwQFxGtLFYGE1k1DSCxD2fQ8MR9CkRKRLrCMQ-qf
+1 > Content-Length: 83
+1 > Host: portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"label":"TypeSource Test Karate","name":"Type Source Automatizado KRT","status":1}
+
+22:26:53.068 [main] DEBUG com.intuit.karate - response time in milliseconds: 1125
+1 < 400
+1 < content-length: 827
+1 < content-type: application/json
+1 < set-cookie: e04ac28d5e084ee6fdbd7bc1d4092a06=e6679c634420882e35307b805c67c783; path=/; HttpOnly
+1 < Set-Cookie: e04ac28d5e084ee6fdbd7bc1d4092a06=e6679c634420882e35307b805c67c783; path=/; HttpOnly
+{"success":false,"data":{"code":"400","status":"BAD_REQUEST","message":"UNKNOWN: org.hibernate.exception.ConstraintViolationException - error executing SQL statement [ERROR: duplicate key value violates unique constraint \"ref_tipo_fuentes_etiqueta_unq\" (23505)] [insert into ref_tipo_fuentes (fecha_creacion,usuario_creacion,etiqueta,nombre,estatus,fecha_modificacion,usuario_modificacion,id) values ($1,$2,$3,$4,$5,$6,$7,$8)]","errors":["UNKNOWN: org.hibernate.exception.ConstraintViolationException - error executing SQL statement [ERROR: duplicate key value violates unique constraint \"ref_tipo_fuentes_etiqueta_unq\" (23505)] [insert into ref_tipo_fuentes (fecha_creacion,usuario_creacion,etiqueta,nombre,estatus,fecha_modificacion,usuario_modificacion,id) values ($1,$2,$3,$4,$5,$6,$7,$8)]"]},"timestamp":1762136813019}
+
+22:26:53.083 [main] ERROR com.intuit.karate - classpath:api/crearTypeSource.feature:19
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 1125, url: https://portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/api/v1/portal/ref-type-sources, response: 
+{"success":false,"data":{"code":"400","status":"BAD_REQUEST","message":"UNKNOWN: org.hibernate.exception.ConstraintViolationException - error executing SQL statement [ERROR: duplicate key value violates unique constraint \"ref_tipo_fuentes_etiqueta_unq\" (23505)] [insert into ref_tipo_fuentes (fecha_creacion,usuario_creacion,etiqueta,nombre,estatus,fecha_modificacion,usuario_modificacion,id) values ($1,$2,$3,$4,$5,$6,$7,$8)]","errors":["UNKNOWN: org.hibernate.exception.ConstraintViolationException - error executing SQL statement [ERROR: duplicate key value violates unique constraint \"ref_tipo_fuentes_etiqueta_unq\" (23505)] [insert into ref_tipo_fuentes (fecha_creacion,usuario_creacion,etiqueta,nombre,estatus,fecha_modificacion,usuario_modificacion,id) values ($1,$2,$3,$4,$5,$6,$7,$8)]"]},"timestamp":1762136813019}
+classpath:api/crearTypeSource.feature:19
+22:26:53.083 [main] ERROR com.intuit.karate - classpath:api/eliminarTypeSource.feature:13
+* def crearResponse = call read('classpath:api/crearTypeSource.feature@crearTypeSources')
+status code was: 400, expected: 200, response time in milliseconds: 1125, url: https://portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/api/v1/portal/ref-type-sources, response: 
+{"success":false,"data":{"code":"400","status":"BAD_REQUEST","message":"UNKNOWN: org.hibernate.exception.ConstraintViolationException - error executing SQL statement [ERROR: duplicate key value violates unique constraint \"ref_tipo_fuentes_etiqueta_unq\" (23505)] [insert into ref_tipo_fuentes (fecha_creacion,usuario_creacion,etiqueta,nombre,estatus,fecha_modificacion,usuario_modificacion,id) values ($1,$2,$3,$4,$5,$6,$7,$8)]","errors":["UNKNOWN: org.hibernate.exception.ConstraintViolationException - error executing SQL statement [ERROR: duplicate key value violates unique constraint \"ref_tipo_fuentes_etiqueta_unq\" (23505)] [insert into ref_tipo_fuentes (fecha_creacion,usuario_creacion,etiqueta,nombre,estatus,fecha_modificacion,usuario_modificacion,id) values ($1,$2,$3,$4,$5,$6,$7,$8)]"]},"timestamp":1762136813019}
+classpath:api/crearTypeSource.feature:19
+classpath:api/eliminarTypeSource.feature:13
+22:26:54.155 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 6 (3 remaining) classpath:api/eliminarTypeSource.feature
+22:28:57.325 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:28:57.351 [main] WARN  com.intuit.karate.Suite - failed to backup existing dir: target
+22:28:57.391 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+22:29:00.069 [main] DEBUG com.intuit.karate - request:
+1 > POST https://ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/intraLogin
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"login":"tns01","clave":"T3st2024.+-"}
+
+22:29:02.046 [main] DEBUG com.intuit.karate - response time in milliseconds: 1966
+1 < 200
+1 < content-type: application/json
+1 < content-length: 326
+1 < set-cookie: c4e2248e6317d37faa062fd3ce9304d4=111be4bf5b2ba37de32b640f6ee05093; path=/; HttpOnly
+1 < Set-Cookie: c4e2248e6317d37faa062fd3ce9304d4=111be4bf5b2ba37de32b640f6ee05093; path=/; HttpOnly
+{"token":"eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjgxOTgzQ0FGODM2MURDOUZERUJGMzMwNEIzRjNDMTc0Iiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2OTQxLCJleHAiOjE3NjIxNDA1NDF9.anFYYeZ0GUtgWwUch6LDa_fG6n2RVW9G3xsT-N-8J07fpVzhnDMIhMAJ8kHO2Y_P"}
+
+22:29:02.695 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:api/crearTypeSource.feature - call by tag at line 15: crearTypeSources
+22:29:02.777 [main] DEBUG com.intuit.karate - request:
+1 > POST https://ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/intraLogin
+1 > Content-Type: application/json; charset=UTF-8
+1 > X-CORRELATION-ID: 1445|E11011|234234
+1 > X-TOKEN-ID: eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjgxOTgzQ0FGODM2MURDOUZERUJGMzMwNEIzRjNDMTc0Iiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2OTQxLCJleHAiOjE3NjIxNDA1NDF9.anFYYeZ0GUtgWwUch6LDa_fG6n2RVW9G3xsT-N-8J07fpVzhnDMIhMAJ8kHO2Y_P
+1 > Content-Length: 39
+1 > Host: ms-auth-oss-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"login":"tns01","clave":"T3st2024.+-"}
+
+22:29:03.600 [main] DEBUG com.intuit.karate - response time in milliseconds: 822
+1 < 200
+1 < content-type: application/json
+1 < content-length: 326
+1 < set-cookie: c4e2248e6317d37faa062fd3ce9304d4=111be4bf5b2ba37de32b640f6ee05093; path=/; HttpOnly
+1 < Set-Cookie: c4e2248e6317d37faa062fd3ce9304d4=111be4bf5b2ba37de32b640f6ee05093; path=/; HttpOnly
+{"token":"eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IkY2MjI1QzZFQzUwMzRFMDYzOUQ3NjFCQ0MwQjU5QUZGIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2OTQzLCJleHAiOjE3NjIxNDA1NDN9.0h-k1xzXtQOGBHf3dLxrPBi75vxka6OA3a-pXDbmYmnoKlhM0OoePPg6IetnA0uH"}
+
+22:29:03.609 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'crearRequest' with new value: read('classpath:JsonRequest/crearTypeSourceRequest.json')
+22:29:03.643 [main] DEBUG com.intuit.karate - request:
+1 > POST https://portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/api/v1/portal/ref-type-sources
+1 > Content-Type: application/json; charset=UTF-8
+1 > X-CORRELATION-ID: 1445|E11011|234234
+1 > X-TOKEN-ID: eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IkY2MjI1QzZFQzUwMzRFMDYzOUQ3NjFCQ0MwQjU5QUZGIiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2OTQzLCJleHAiOjE3NjIxNDA1NDN9.0h-k1xzXtQOGBHf3dLxrPBi75vxka6OA3a-pXDbmYmnoKlhM0OoePPg6IetnA0uH
+1 > Content-Length: 111
+1 > Host: portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"label":"TypeSource Test Karate 1762136943619","name":"Type Source Automatizado KRT 1762136943619","status":1}
+
+22:29:04.784 [main] DEBUG com.intuit.karate - response time in milliseconds: 1137
+1 < 200
+1 < content-length: 306
+1 < content-type: application/json;charset=UTF-8
+1 < set-cookie: e04ac28d5e084ee6fdbd7bc1d4092a06=e6679c634420882e35307b805c67c783; path=/; HttpOnly
+1 < Set-Cookie: e04ac28d5e084ee6fdbd7bc1d4092a06=e6679c634420882e35307b805c67c783; path=/; HttpOnly
+{"success":true,"data":{"id":457,"label":"TypeSource Test Karate 1762136943619","name":"Type Source Automatizado KRT 1762136943619","status":1,"createdBy":"X-USER-ID","updatedBy":"X-USER-ID","createdAt":"2025-11-03T02:29:04.430718603","updatedAt":"2025-11-03T02:29:04.430733025"},"timestamp":1762136944692}
+
+22:29:04.789 [main] INFO  com.intuit.karate - [print] Type Source creado con ID: 457 
+22:29:04.801 [main] INFO  com.intuit.karate - [print] Type Source creado con ID: 457 
+22:29:04.801 [main] INFO  com.intuit.karate - [print] {
+  "success": true,
+  "data": {
+    "id": 457,
+    "label": "TypeSource Test Karate 1762136943619",
+    "name": "Type Source Automatizado KRT 1762136943619",
+    "status": 1,
+    "createdBy": "X-USER-ID",
+    "updatedBy": "X-USER-ID",
+    "createdAt": "2025-11-03T02:29:04.430718603",
+    "updatedAt": "2025-11-03T02:29:04.430733025"
+  },
+  "timestamp": 1762136944692
+}
+ 
+22:29:04.807 [main] INFO  com.intuit.karate - [print] === TIEMPO DE RESPUESTA === 1.137 s 
+22:29:04.811 [main] INFO  com.intuit.karate - [print] ID obtenido del feature crear: 457 
+22:29:04.815 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com/api/v1/portal/ref-type-sources/457
+1 > Content-Type: application/json
+1 > X-CORRELATION-ID: 1445|E11011|234234
+1 > X-TOKEN-ID: eyJhbGciOiJIUzM4NCJ9.eyJjb2RFbXBsb3llZSI6IjgxOTgzQ0FGODM2MURDOUZERUJGMzMwNEIzRjNDMTc0Iiwic3ViIjoiZGVmYXVsdC1zdWJqZWN0IiwiaXNzIjoiZGVmYXVsdC1pc3N1ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZWZhdWx0LXVzZXJuYW1lIiwiaWF0IjoxNzYyMTM2OTQxLCJleHAiOjE3NjIxNDA1NDF9.anFYYeZ0GUtgWwUch6LDa_fG6n2RVW9G3xsT-N-8J07fpVzhnDMIhMAJ8kHO2Y_P
+1 > Host: portal-inventario-bff-git-dev-front-oss.apps.tmve-nprod-1.tmve-qa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:29:06.269 [main] DEBUG com.intuit.karate - response time in milliseconds: 1454
+1 < 204
+1 < set-cookie: e04ac28d5e084ee6fdbd7bc1d4092a06=ea10ecf8d95bb6244abca4c8193e7f38; path=/; HttpOnly
+1 < Set-Cookie: e04ac28d5e084ee6fdbd7bc1d4092a06=ea10ecf8d95bb6244abca4c8193e7f38; path=/; HttpOnly
+
+
+22:29:06.271 [main] INFO  com.intuit.karate - [print] Type Source eliminado con ID: 457 
+22:29:06.273 [main] INFO  com.intuit.karate - [print] === TIEMPO DE RESPUESTA === 1.454 s 
+22:29:07.629 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 6 (3 remaining) classpath:api/eliminarTypeSource.feature

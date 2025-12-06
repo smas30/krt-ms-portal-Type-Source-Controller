@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "required": ["success", "data", "timestamp"],
+  "properties": {
+    "success": { 
+      "type": "boolean", 
+      "enum": [true] 
+    },
+    "data": {
+      "type": "object",
+      "required": ["data", "total", "page", "limit"],
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": { "type": "integer" },
+              "label": { "type": "string" },
+              "name": { "type": "string" },
+              "status": { "type": "integer" },
+              "createdBy": { "type": "string" },
+              "updatedBy": { "type": "string" },
+              "createdAt": { "type": "string" },
+              "updatedAt": { "type": "string" }
+            }
+          }
+        },
+        "total": { "type": "integer" },
+        "page": { "type": "integer" },
+        "limit": { "type": "integer" },
+        "hasNext": { "type": "boolean" },
+        "hasPrev": { "type": "boolean" },
+        "next": { "type": "integer" },
+        "prev": { "type": "integer" },
+        "pages": { "type": "integer" },
+        "last": { "type": "integer" },
+        "first": { "type": "integer" }
+      }
+    },
+    "timestamp": { 
+      "type": "integer",
+      "minimum": 0
+    }
+  }
+}
+
